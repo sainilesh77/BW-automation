@@ -1,0 +1,24 @@
+{
+  "name": "bw-automation",
+  "version": "1.0.0",
+  "description": "BW automation",
+  "main": "index.js",
+  "scripts": {
+    "test-runner": "npx cypress open",
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sainilesh77/BW-automation.git"
+  },
+  "author": "Nilesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sainilesh77/BW-automation/issues"
+  },
+  "homepage": "https://github.com/sainilesh77/BW-automation#readme",
+  "devDependencies": {
+    "cypress": "^12.4.1"
+  },
+  "dependencies": {}
+}
