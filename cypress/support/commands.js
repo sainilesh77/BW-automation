@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('verifyAllLinks', () => {
+    cy.get('a[href*="/wp-json/bwcms"]:not([href=""]').each(($el) => {
+        cy.request($el.prop('href')).as('link');
+    });
+      
+    cy.get('@link').should((response) => {
+        expect(response.status).to.eq(200);
+    });
+});
