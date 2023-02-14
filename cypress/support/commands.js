@@ -24,12 +24,25 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('verifyAllLinks', () => {
-    cy.get('a[href*="/wp-json/bwcms"]:not([href=""]').each(($el) => {
+Cypress.Commands.add('verifyAllLinks', (domain) => {
+    cy.get(`a[href*='${domain}']:not([href=""]`).each(($el) => {
         cy.request($el.prop('href')).as('link');
     });
-      
     cy.get('@link').should((response) => {
         expect(response.status).to.eq(200);
     });
 });
+
+Cypress.Commands.add('getMenus', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?name=main-header-navigation",
+    }).then((response) => { 
+        expect(response.status).to.eq(200);
+        Cypress.env('menus').push(response)
+    })
+  
+  })

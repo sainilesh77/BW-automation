@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-runner": "npx cypress open",
-    "test": "npx cypress run"
+    "test": "npx cypress run --spec cypress/e2e/UI/*cy.js allure=true ,allureResultsPath=allure-report/results"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/sainilesh77/BW-automation#readme",
   "devDependencies": {
-    "cypress": "^12.4.1"
+    "allure-commandline": "^2.21.0",
+    "cypress": "^12.4.1",
+    "mocha-allure-reporter": "^1.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.35.2",
+    "cypress-xpath": "^2.0.1"
+  }
 }
