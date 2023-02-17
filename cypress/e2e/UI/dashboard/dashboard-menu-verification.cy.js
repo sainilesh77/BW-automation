@@ -33,10 +33,15 @@ describe('BW-CMS Verification test suite', () => {
         dashboardPage.verifyMainHeaders(menusResponse);
     });
 
-    it.only('Verify Sub Headers', function () {
-        dashboardPage.verifySubHeaders(menusResponse);
+    it('Verify all Sub Headers for each main header', function () {
+        dashboardPage.verifySubHeadersLength(menusResponse);
+        dashboardPage.verifySubHeaderv2(menusResponse);
+    });
 
+    it('Verify all Headers Links', function () {
+        dashboardPage.verifyMainHeaderLinks(menusResponse);
+    });
+    it('Verify Ant Menu List for each header', function () {
+        dashboardPage.verifyAntMenu(menusResponse);
     });
 });
-
-
