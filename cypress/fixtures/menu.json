@@ -1,0 +1,762 @@
+[
+  {
+    "id": 12,
+    "title": "News",
+    "url": "#",
+    "description": "The industry’s only patented and global propriety news content distribution",
+    "target": "",
+    "children": [
+      {
+        "id": 17,
+        "title": "News with Multimedia",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": [
+          {
+            "id": 45,
+            "title": "Press Release Distribution",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 46,
+            "title": "Interactive Media",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 47,
+            "title": "Multimedia Distribution",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 48,
+            "title": "Smart News Release",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 49,
+            "title": "Media Database",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 50,
+            "title": "GMSM",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "title": "News by Industry",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": [
+          {
+            "id": 52,
+            "title": "Press Release Distribution",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 53,
+            "title": "IPO Services",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 54,
+            "title": "Filing Services",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 55,
+            "title": "Canadian Disclosure",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 56,
+            "title": "IR Websites",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 57,
+            "title": "Workiva",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 58,
+            "title": "Corporate Social Responsibility",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 59,
+            "title": "European Disclosure",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "News by Subject",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": [
+          {
+            "id": 60,
+            "title": "Distribution Lists",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 61,
+            "title": "Geographic Targeting",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 62,
+            "title": "Industry Targeting",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 63,
+            "title": "Demographic Targeting",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 64,
+            "title": "Public Policy Services",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 65,
+            "title": "NewsTrak Reports",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "News by Language",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": [
+          {
+            "id": 66,
+            "title": "Press Pass",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 67,
+            "title": "Licensed Content",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 68,
+            "title": "Technology for Media",
+            "url": "#",
+            "description": "",
+            "target": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Services",
+    "url": "/services",
+    "description": "The industry’s only patented and global propriety news content distribution",
+    "target": "",
+    "children": [
+      {
+        "id": 210,
+        "title": "Overview",
+        "url": "https://services.businesswire.com/",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "_blank",
+        "children": []
+      },
+      {
+        "id": 21,
+        "title": "Public Relations",
+        "url": "https://services.businesswire.com/public-relations-services",
+        "description": "",
+        "target": "_blank",
+        "children": [
+          {
+            "id": 185,
+            "title": "Press Release Distribution",
+            "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 187,
+            "title": "Interactive Media",
+            "url": "https://services.businesswire.com/public-relations-services/interactive-media",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 188,
+            "title": "Multimedia Distribution",
+            "url": "https://services.businesswire.com/public-relations-services/multimedia-distribution",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 190,
+            "title": "Smart News Release",
+            "url": "https://services.businesswire.com/public-relations-services/smart-news-release",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 191,
+            "title": "Media Database",
+            "url": "https://services.businesswire.com/public-relations-services/media-database",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 192,
+            "title": "GMSM",
+            "url": "https://services.businesswire.com/public-relations-services/gmsm",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "title": "Investor Relations",
+        "url": "https://services.businesswire.com/investor-relations-services",
+        "description": "",
+        "target": "_blank",
+        "children": [
+          {
+            "id": 186,
+            "title": "Press Release Distribution",
+            "url": "https://services.businesswire.com/investor-relations-services/press-release-disclosure",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 194,
+            "title": "IPO Services",
+            "url": "https://services.businesswire.com/investor-relations-services/ipo-services",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 195,
+            "title": "Filing Services",
+            "url": "https://services.businesswire.com/investor-relations-services/filing-services",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 196,
+            "title": "Canadian Disclosure",
+            "url": "https://services.businesswire.com/investor-relations-services/canadian-disclosure",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 197,
+            "title": "IR Websites",
+            "url": "https://services.businesswire.com/investor-relations-services/ir-websites",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 198,
+            "title": "Workiva",
+            "url": "https://services.businesswire.com/investor-relations-services/workiva",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 199,
+            "title": "Corporate Social Responsibility",
+            "url": "https://services.businesswire.com/investor-relations-services/corporate-social-responsibility",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 200,
+            "title": "European Disclosure",
+            "url": "https://services.businesswire.com/investor-relations-services/european-disclosure",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "title": "Distribution & Analytics",
+        "url": "https://services.businesswire.com/distribution-analytics",
+        "description": "",
+        "target": "_blank",
+        "children": [
+          {
+            "id": 201,
+            "title": "Distribution Lists",
+            "url": "https://services.businesswire.com/distribution-analytics/distribution-lists",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 202,
+            "title": "Geographic Targeting",
+            "url": "https://services.businesswire.com/distribution-analytics/geographic-targeting",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 203,
+            "title": "Industry Targeting",
+            "url": "https://services.businesswire.com/distribution-analytics/industry-targeting",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 204,
+            "title": "Demographic Targeting",
+            "url": "https://services.businesswire.com/distribution-analytics/demographic-targeting",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 205,
+            "title": "Public Policy Services",
+            "url": "https://services.businesswire.com/distribution-analytics/public-policy-services",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 206,
+            "title": "NewsTrak Reports",
+            "url": "https://services.businesswire.com/distribution-analytics/newstrak-reports",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "title": "Media & Journalist Tools",
+        "url": "https://services.businesswire.com/media-journalist-tools",
+        "description": "",
+        "target": "_blank",
+        "children": [
+          {
+            "id": 207,
+            "title": "Press Pass",
+            "url": "https://services.businesswire.com/media-journalist-tools/presspass?hsLang=en",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 208,
+            "title": "Licensed Content",
+            "url": "https://services.businesswire.com/media-journalist-tools/licensed-content?hsLang=en",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 209,
+            "title": "Technology for Media",
+            "url": "https://services.businesswire.com/media-journalist-tools/media-technologies?hsLang=en",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Blog",
+    "url": "https://blog.businesswire.com/",
+    "description": "The industry’s only patented and global propriety news content distribution",
+    "target": "_blank",
+    "children": [
+      {
+        "id": 211,
+        "title": "Overview",
+        "url": "#",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 25,
+        "title": "Blog Category",
+        "url": "#",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 26,
+        "title": "Blog Category",
+        "url": "#",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Resources",
+    "url": "https://services.businesswire.com/resources-education",
+    "description": "The industry’s only patented and global propriety news content distribution",
+    "target": "_blank",
+    "children": [
+      {
+        "id": 212,
+        "title": "Overview",
+        "url": "#",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 27,
+        "title": "Whitepapers and Distribution Lists",
+        "url": "https://services.businesswire.com/resources-education",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "_blank",
+        "children": []
+      },
+      {
+        "id": 28,
+        "title": "Custom-testimonials",
+        "url": "https://services.businesswire.com/customer-testimonials",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "_blank",
+        "children": []
+      },
+      {
+        "id": 29,
+        "title": "Sample Press Release",
+        "url": "https://services.businesswire.com/resources-education/sample-press-release",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "_blank",
+        "children": []
+      },
+      {
+        "id": 30,
+        "title": "Find Your News Online",
+        "url": "https://services.businesswire.com/find-your-news-online",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "_blank",
+        "children": []
+      },
+      {
+        "id": 31,
+        "title": "Media & Journalist Tools",
+        "url": "https://services.businesswire.com/media-journalist-tools",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "_blank",
+        "children": []
+      },
+      {
+        "id": 32,
+        "title": "Disclosure Resources",
+        "url": "https://services.businesswire.com/resources-education/disclosure-resources",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "_blank",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Contact",
+    "url": "https://services.businesswire.com/contact-us",
+    "description": "The industry’s only patented and global propriety news content distribution",
+    "target": "_blank",
+    "children": [
+      {
+        "id": 213,
+        "title": "Overview",
+        "url": "#",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 33,
+        "title": "Office Location",
+        "url": "https://newsroom.businesswire.com/contact/office-locations/default.aspx",
+        "description": "",
+        "target": "_blank",
+        "children": [
+          {
+            "id": 164,
+            "title": "Press Release Distribution",
+            "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 165,
+            "title": "Interactive Media",
+            "url": "https://services.businesswire.com/public-relations-services/interactive-media",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 166,
+            "title": "Multimedia Distribution",
+            "url": "https://services.businesswire.com/public-relations-services/multimedia-distribution",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 167,
+            "title": "Smart News Release",
+            "url": "https://services.businesswire.com/public-relations-services/smart-news-release",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 168,
+            "title": "Media Database",
+            "url": "https://services.businesswire.com/public-relations-services/media-database",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 169,
+            "title": "GMSM",
+            "url": "https://services.businesswire.com/public-relations-services/gmsm",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "title": "Media & Partnerships",
+        "url": "https://newsroom.businesswire.com/contact/media-and-partnership-contacts/default.aspx",
+        "description": "",
+        "target": "",
+        "children": [
+          {
+            "id": 170,
+            "title": "Press Release Distribution",
+            "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 171,
+            "title": "IPO Services",
+            "url": "https://services.businesswire.com/investor-relations-services/ipo-services",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 172,
+            "title": "Filing Services",
+            "url": "https://services.businesswire.com/investor-relations-services/filing-services",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 173,
+            "title": "Canadian Disclosure",
+            "url": "https://services.businesswire.com/investor-relations-services/canadian-disclosure",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 174,
+            "title": "IR Websites",
+            "url": "https://services.businesswire.com/investor-relations-services/ir-websites",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 175,
+            "title": "Workiva",
+            "url": "https://services.businesswire.com/investor-relations-services/workiva",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 176,
+            "title": "Corporate Social Responsibility",
+            "url": "https://services.businesswire.com/investor-relations-services/corporate-social-responsibility",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 177,
+            "title": "European Disclosure",
+            "url": "https://services.businesswire.com/investor-relations-services/european-disclosure",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "title": "Sign Up for Account",
+        "url": "https://membership.businesswire.com/sign-up",
+        "description": "",
+        "target": "",
+        "children": [
+          {
+            "id": 178,
+            "title": "Distribution Lists",
+            "url": "https://services.businesswire.com/distribution-analytics/distribution-lists",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 179,
+            "title": "Geographic Targetting",
+            "url": "https://services.businesswire.com/distribution-analytics/geographic-targeting",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 180,
+            "title": "Industry Targeting",
+            "url": "https://services.businesswire.com/distribution-analytics/industry-targeting",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 181,
+            "title": "Demographic Targeting",
+            "url": "https://services.businesswire.com/distribution-analytics/demographic-targeting",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          },
+          {
+            "id": 182,
+            "title": "Public Policy Services",
+            "url": "https://services.businesswire.com/distribution-analytics/public-policy-services",
+            "description": "",
+            "target": "_blank",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
