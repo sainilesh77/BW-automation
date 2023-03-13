@@ -39,7 +39,7 @@ class DashboardPage {
         })
         }
     }
-    //.ant-row.submenu-row.css-dev-only-do-not-override-1q1zqvg >div.ant-col.css-dev-only-do-not-override-1q1zqvg
+
     async verifySubHeaderv2(response) {
         let antIndex=12;
         for(let i=0;i<response.length;i++){
@@ -120,5 +120,91 @@ class DashboardPage {
         return  cy.get('div > div:nth-child('+index+') > li > span');
     }
 
+    async verifyFootersLength(response){
+        cy.get(dashboardPage.mainFooter).eq(0).scrollIntoView();
+        cy.get(dashboardPage.mainFooter).should('have.length', response.length+1)
+    }
+
+    async verifyFooterContents(response){
+            cy.get(dashboardPage.mainFooter).eq(0).scrollIntoView();
+            for(let i=0;i<response.length;i++){
+                cy.get(dashboardPage.mainFooter).each(async ($el,index,$list) => {
+                const Menu=$el.text();
+                if(Menu.includes(response[i].title)){
+                    cy.get('section > footer > div.footer > div > div').eq(index).trigger('mouseover');
+                    cy.wait(1000)
+                    for(let j=0;j<response[i].children.length;j++){
+                       await  expect(response[i].children[j].title).to.exist
+                        // cy.get('footer > div.footer > div > div > div > div > div').eq(index).find('a.footer-items').contains(response[i].children[j].title)
+                    }
+            }
+            })
+            }
+    }
+
+    async verifyMainFooters(footer) {
+        footer.forEach(async (values)=>{
+            cy.log(values)
+            await cy.get(dashboardPage.mainFooter).contains(values.title)
+        })
+    }
+
+    async verifyFooterBottomLength(response){
+        cy.get(dashboardPage.pageFooterBottom).eq(0).scrollIntoView();
+        cy.get(dashboardPage.pageFooterBottom).should('have.length', response.length)
+    }
+
+    async verifyFooterBottom(footer) {
+        footer.forEach(async (values)=>{
+            cy.log(values)
+            await cy.get(dashboardPage.pageFooterBottom).contains(values.title)
+        })
+    }
+
+    async verifyContact(contactResponse) {
+        cy.get('.ant-card-body').find('a > button').contains("Contact")
+        cy.get('.ant-card-body').find('a > button').contains("Contact")
+    }
+
+    verifyContactTitle(contactResponse) {
+        cy.get('.ant-card-body').find('a > button').each(($el,index) => {
+            cy.get('.ant-card-body').find('a > button').eq(index).scrollIntoView()
+            const antMenu=$el.text();
+            if(antMenu.includes("Contact")){
+                cy.log(index)
+                cy.get('.ant-card-body').eq(index).children().contains(contactResponse.title)
+            }
+    })
+}
+verifyContactDescription(contactResponse) {
+    cy.get('.ant-card-body').find('a > button').each(($el,index) => {
+        cy.get('.ant-card-body').eq(index).scrollIntoView()
+        const antMenu=$el.text();
+        if(antMenu.includes("Contact")){
+            cy.log(index)
+            cy.get('.ant-card-body').eq(index).find('.contact-banner-text2').should('be.visible').contains(contactResponse.description.substring(0, 5))
+        }
+    })
+}
+
+verifyTestiMonialsCarousel(testimonialResponse) {
+    cy.get('div.testimonials-div > div.ant-carousel').should('be.visible')
+    cy.get('div.testimonials-div > div.ant-carousel').should('be.visible').contains(testimonialResponse[0].settings.subTitle)
+}
+
+verifyCarouselContents(testimonialResponse) {
+    for(let i=0;i<testimonialResponse[0].settings.testimonials.length;i++) {
+        cy.get('div.testimonials-div > div.ant-carousel').find('img').should("have.attr", "src")
+        .then(src => {
+          if(src.contains(testimonialResponse[0].settings.testimonials[i].logo))
+          {
+            cy.get('div.testimonials-div > div.ant-carousel').contains(testimonialResponse[0].settings.testimonials[i].description)
+          }
+          else{
+            cy.get('div.testimonials-div > div.ant-carousel').find('div.slick-arrow.slick-next').click()
+          }
+        });
+    }
+}
 }
 export default new DashboardPage();

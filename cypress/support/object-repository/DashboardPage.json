@@ -1,5 +1,7 @@
 {
     "mainMenuList":"div.header-arrow > ul > li > div > span > span",
     "menuSubHeaders":" div > ul > div > div > a > h3",
-    "antMenuList":" div > ul > div > div > li > span"
+    "antMenuList":" div > ul > div > div > li > span",
+    "pageFooterBottom":"footer > div.next-footer-container div > div > a",
+    "mainFooter":"div.footer-title > a"
 }

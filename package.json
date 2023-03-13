@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test-runner": "npx cypress open",
-    "test": "npx cypress run --spec cypress/e2e/*cy.js allure=true ,allureResultsPath=allure-report/results"
+    "clean:reports": "if exist cypress\\reports rmdir /s/q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "test": "npx cypress run --spec cypress/e2e/ --env allure=true"
   },
   "repository": {
     "type": "git",
@@ -18,12 +20,13 @@
   },
   "homepage": "https://github.com/sainilesh77/BW-automation#readme",
   "devDependencies": {
-    "allure-commandline": "^2.21.0",
+    "@shelex/cypress-allure-plugin": "^2.35.2",
     "cypress": "^12.5.1",
-    "mocha-allure-reporter": "^1.4.0"
+    "cypress-mochawesome-reporter": "^3.3.0"
   },
   "dependencies": {
-    "@shelex/cypress-allure-plugin": "^2.35.2",
-    "cypress-xpath": "^2.0.1"
+    "allure-commandline": "^2.21.0",
+    "cypress-xpath": "^2.0.1",
+    "mocha-allure-reporter": "^1.4.0"
   }
 }

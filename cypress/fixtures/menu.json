@@ -2,21 +2,29 @@
   {
     "id": 12,
     "title": "News",
-    "url": "#",
+    "url": "/",
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "",
     "children": [
       {
+        "id": 735,
+        "title": "Overview",
+        "url": "/",
+        "description": "The industry’s only patented and global propriety news content distribution",
+        "target": "",
+        "children": []
+      },
+      {
         "id": 17,
         "title": "News with Multimedia",
-        "url": "#",
+        "url": "/",
         "description": "",
         "target": "",
         "children": [
           {
             "id": 45,
             "title": "Press Release Distribution",
-            "url": "#",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -24,7 +32,7 @@
           {
             "id": 46,
             "title": "Interactive Media",
-            "url": "#",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -32,7 +40,7 @@
           {
             "id": 47,
             "title": "Multimedia Distribution",
-            "url": "#",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -40,7 +48,7 @@
           {
             "id": 48,
             "title": "Smart News Release",
-            "url": "#",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -48,7 +56,7 @@
           {
             "id": 49,
             "title": "Media Database",
-            "url": "#",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -56,7 +64,7 @@
           {
             "id": 50,
             "title": "GMSM",
-            "url": "#",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -66,70 +74,78 @@
       {
         "id": 18,
         "title": "News by Industry",
-        "url": "#",
+        "url": "/",
         "description": "",
         "target": "",
         "children": [
           {
             "id": 52,
-            "title": "Press Release Distribution",
-            "url": "#",
+            "title": "Automotive News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 53,
-            "title": "IPO Services",
-            "url": "#",
+            "title": "College & University Pressroom News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 54,
-            "title": "Filing Services",
-            "url": "#",
+            "title": "Communication News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 55,
-            "title": "Canadian Disclosure",
-            "url": "#",
+            "title": "Construction & Property News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 56,
-            "title": "IR Websites",
-            "url": "#",
+            "title": "Consumer News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 57,
-            "title": "Workiva",
-            "url": "#",
+            "title": "Corporate Social Responsibility News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 58,
-            "title": "Corporate Social Responsibility",
-            "url": "#",
+            "title": "Defense News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 59,
-            "title": "European Disclosure",
-            "url": "#",
+            "title": "Education News",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": "18",
+            "title": "View All",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -139,54 +155,78 @@
       {
         "id": 20,
         "title": "News by Subject",
-        "url": "#",
+        "url": "/",
         "description": "",
         "target": "",
         "children": [
           {
             "id": 60,
-            "title": "Distribution Lists",
-            "url": "#",
+            "title": "Advisory/Reminder News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 61,
-            "title": "Geographic Targeting",
-            "url": "#",
+            "title": "Annual Meeting",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 62,
-            "title": "Industry Targeting",
-            "url": "#",
+            "title": "Award News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 63,
-            "title": "Demographic Targeting",
-            "url": "#",
+            "title": "Bankruptcy News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 64,
-            "title": "Public Policy Services",
-            "url": "#",
+            "title": "Bond Issue News",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
           },
           {
             "id": 65,
-            "title": "NewsTrak Reports",
-            "url": "#",
+            "title": "Bond/Stock Rating News",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 66,
+            "title": "Business Update",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 67,
+            "title": "Closed End Fund News",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": "20",
+            "title": "View All",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -196,30 +236,78 @@
       {
         "id": 19,
         "title": "News by Language",
-        "url": "#",
+        "url": "/",
         "description": "",
         "target": "",
         "children": [
           {
-            "id": 66,
-            "title": "Press Pass",
-            "url": "#",
-            "description": "",
-            "target": "",
-            "children": []
-          },
-          {
-            "id": 67,
-            "title": "Licensed Content",
-            "url": "#",
-            "description": "",
-            "target": "",
-            "children": []
-          },
-          {
             "id": 68,
-            "title": "Technology for Media",
-            "url": "#",
+            "title": "Español",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 728,
+            "title": "Português",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 729,
+            "title": "Deutsch",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 730,
+            "title": "Français",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 731,
+            "title": "Italiano",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 732,
+            "title": "Nederlands",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 733,
+            "title": "Dansk",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": 734,
+            "title": "Norsk",
+            "url": "/",
+            "description": "",
+            "target": "",
+            "children": []
+          },
+          {
+            "id": "19",
+            "title": "View All",
+            "url": "/",
             "description": "",
             "target": "",
             "children": []
@@ -246,9 +334,9 @@
       {
         "id": 21,
         "title": "Public Relations",
-        "url": "https://services.businesswire.com/public-relations-services",
+        "url": "/services/public-relations",
         "description": "",
-        "target": "_blank",
+        "target": "",
         "children": [
           {
             "id": 185,
@@ -303,9 +391,9 @@
       {
         "id": 22,
         "title": "Investor Relations",
-        "url": "https://services.businesswire.com/investor-relations-services",
+        "url": "/services/investor-relations",
         "description": "",
-        "target": "_blank",
+        "target": "",
         "children": [
           {
             "id": 186,
@@ -370,15 +458,23 @@
             "description": "",
             "target": "_blank",
             "children": []
+          },
+          {
+            "id": "22",
+            "title": "View All",
+            "url": "/services/investor-relations",
+            "description": "",
+            "target": "",
+            "children": []
           }
         ]
       },
       {
         "id": 23,
         "title": "Distribution & Analytics",
-        "url": "https://services.businesswire.com/distribution-analytics",
+        "url": "/services/distribution-analytics",
         "description": "",
-        "target": "_blank",
+        "target": "",
         "children": [
           {
             "id": 201,
@@ -433,9 +529,9 @@
       {
         "id": 24,
         "title": "Media & Journalist Tools",
-        "url": "https://services.businesswire.com/media-journalist-tools",
+        "url": "/services/media-journalist-tools",
         "description": "",
-        "target": "_blank",
+        "target": "",
         "children": [
           {
             "id": 207,
@@ -475,7 +571,7 @@
       {
         "id": 211,
         "title": "Overview",
-        "url": "#",
+        "url": "/",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "children": []
@@ -483,7 +579,7 @@
       {
         "id": 25,
         "title": "Blog Category",
-        "url": "#",
+        "url": "/",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "children": []
@@ -491,7 +587,7 @@
       {
         "id": 26,
         "title": "Blog Category",
-        "url": "#",
+        "url": "/",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "children": []
@@ -508,7 +604,7 @@
       {
         "id": 212,
         "title": "Overview",
-        "url": "#",
+        "url": "/",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "children": []
@@ -566,14 +662,14 @@
   {
     "id": 16,
     "title": "Contact",
-    "url": "https://services.businesswire.com/contact-us",
+    "url": "/contactus",
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "_blank",
     "children": [
       {
         "id": 213,
         "title": "Overview",
-        "url": "#",
+        "url": "/contactus",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "children": []
@@ -581,7 +677,7 @@
       {
         "id": 33,
         "title": "Office Location",
-        "url": "https://newsroom.businesswire.com/contact/office-locations/default.aspx",
+        "url": "/officelocation",
         "description": "",
         "target": "_blank",
         "children": [
@@ -704,6 +800,14 @@
             "url": "https://services.businesswire.com/investor-relations-services/european-disclosure",
             "description": "",
             "target": "_blank",
+            "children": []
+          },
+          {
+            "id": "34",
+            "title": "View All",
+            "url": "https://newsroom.businesswire.com/contact/media-and-partnership-contacts/default.aspx",
+            "description": "",
+            "target": "",
             "children": []
           }
         ]

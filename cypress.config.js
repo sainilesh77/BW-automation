@@ -1,17 +1,20 @@
 const { defineConfig } = require("cypress");
-
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 module.exports = defineConfig({
+  video:false,
   env: {
-    menus:"Test"
+    allureReuseAfterSpec: true,
+    allure:true,
+    allureResultsPath:'allure-results',
+    allureLogCypress:true
   },
-  reporter: 'mochawesome',
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-
+      allureWriter(on, config);
+      return config;
     },
     baseUrl:"https://hc7abfv9fjaakyg28fdla4s0n.js.wpenginepowered.com/",
     apiBaseUrl:"https://businesswirdev.wpengine.com/",
     defaultCommandTimeout: 30000
-  },
+  }
 });
