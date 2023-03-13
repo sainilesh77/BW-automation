@@ -1,0 +1,33 @@
+[
+  {
+    "settings": {
+      "title": "",
+      "subTitle": "what our customers are saying"
+    },
+    "posts": {
+      "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/accenture-logo.png",
+      "company_name": "Accenture",
+      "testimonial_text": "<p>At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong>staff is always available, always helpful, always reliable</strong> and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.</p>\n",
+      "author_name": "Todd Petruska",
+      "author_designation": "Corporate Communications"
+    },
+    "testimonials": [
+      {
+        "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/1024px-Toshiba_logo.svg.png",
+        "company": "Toshiba",
+        "description": "I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s staff is always avai...",
+        "description_full": "I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s staff is always available, always helpful, always reliable and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.\n",
+        "authorName": "Todd Petruska",
+        "authorDesignation": "Corporate Communications"
+      },
+      {
+        "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/accenture-logo.png",
+        "company": "Accenture",
+        "description": "At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong...",
+        "description_full": "At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong>staff is always available, always helpful, always reliable</strong> and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.\n",
+        "authorName": "Todd Petruska",
+        "authorDesignation": "Corporate Communications"
+      }
+    ]
+  }
+]

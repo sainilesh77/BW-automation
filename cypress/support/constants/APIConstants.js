@@ -9,6 +9,27 @@ class APIConstants {
         FOOTER_BOTTOM: "footer-bottom-navigation"
     }
 
+    PAGE = {
+        SERVICE_PAGE: "service",
+        HOME_PAGE: "home",
+    }
+
+    SETTING={GLOBAL_SETTING:"globalsettings"}
+
+    TESTIMONIALS={
+        TESTIMONIAL:"testimonials"
+    }
+
+    GLOBAL_COMPONENTS={
+        CONTACT_US:"contact_us",
+        DEMO:"demo",
+        NEWSLETTER:"newsletter",
+        SIGN_UP:"sign_up",
+        RIGHT:"right",
+        WHO_WE_ARE:"who_we_are",
+        VIDEO_COMPONENT:"video_component"
+    }
+
     RESPONSE={
         SUCCESS:200,
         NOT_FOUND:404,
