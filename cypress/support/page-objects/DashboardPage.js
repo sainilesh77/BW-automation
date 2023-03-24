@@ -167,29 +167,24 @@ class DashboardPage {
     }
 
     verifyContactTitle(contactResponse) {
-        cy.get('.ant-card-body').find('a > button').each(($el,index) => {
-            cy.get('.ant-card-body').find('a > button').eq(index).scrollIntoView()
-            const antMenu=$el.text();
-            if(antMenu.includes("Contact")){
-                cy.log(index)
-                cy.get('.ant-card-body').eq(index).children().contains(contactResponse.title)
-            }
-    })
+            cy.get('.ant-card-body .contact-banner-content').find('a > button').scrollIntoView()
+            if(cy.get('.ant-card-body .contact-banner-content').contains("Contact Us")){
+                cy.get('.ant-card-body .contact-banner-content').children().contains(contactResponse.title)
+    }
 }
 verifyContactDescription(contactResponse) {
-    cy.get('.ant-card-body').find('a > button').each(($el,index) => {
-        cy.get('.ant-card-body').eq(index).scrollIntoView()
-        const antMenu=$el.text();
-        if(antMenu.includes("Contact")){
-            cy.log(index)
-            cy.get('.ant-card-body').eq(index).find('.contact-banner-text2').should('be.visible').contains(contactResponse.description.substring(0, 5))
+        cy.get('.ant-card-body .contact-banner-content').scrollIntoView()
+        if(cy.get('.ant-card-body .contact-banner-content').contains("Contact Us")){
+            cy.get('.ant-card-body .contact-banner-content').find('.contact-banner-text2').should('be.visible').contains(contactResponse.description.substring(0, 5))
         }
-    })
 }
 
 verifyTestiMonialsCarousel(testimonialResponse) {
-    cy.get('div.testimonials-div > div.ant-carousel').should('be.visible')
-    cy.get('div.testimonials-div > div.ant-carousel').should('be.visible').contains(testimonialResponse[0].settings.subTitle)
+    cy.get('div.testimonials-div > div.ant-carousel').should('be.visible').scrollIntoView();
+    cy.get('h3.myCarousel-subtext').each(($el,index) => {
+        let heading=$el.text();
+        expect(testimonialResponse[0].settings.subTitle).contains(heading.trim().toLocaleLowerCase())
+    })
 }
 
 verifyCarouselContents(testimonialResponse) {
