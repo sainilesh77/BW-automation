@@ -27,7 +27,6 @@ describe('BW-CMS Testimonial Verification test suite', () => {
 
     it('Verify testimonial contents', function () {
         dashboardPage.verifyTestiMonialsCarousel(testimonialResponse);
-       // dashboardPage.verifyCarouselContents(testimonialResponse)
     });
 
 });

@@ -662,7 +662,7 @@
   {
     "id": 16,
     "title": "Contact",
-    "url": "/contactus",
+    "url": "/contact-us",
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "_blank",
     "children": [
@@ -677,9 +677,9 @@
       {
         "id": 33,
         "title": "Office Location",
-        "url": "/officelocation",
+        "url": "/contact/office-locations",
         "description": "",
-        "target": "_blank",
+        "target": "",
         "children": [
           {
             "id": 164,
@@ -734,7 +734,7 @@
       {
         "id": 34,
         "title": "Media & Partnerships",
-        "url": "https://newsroom.businesswire.com/contact/media-and-partnership-contacts/default.aspx",
+        "url": "/contact/media-and-partnership-contacts",
         "description": "",
         "target": "",
         "children": [
@@ -805,7 +805,7 @@
           {
             "id": "34",
             "title": "View All",
-            "url": "https://newsroom.businesswire.com/contact/media-and-partnership-contacts/default.aspx",
+            "url": "/contact/media-and-partnership-contacts",
             "description": "",
             "target": "",
             "children": []

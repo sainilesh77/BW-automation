@@ -14,6 +14,7 @@
     "testimonials": [
       {
         "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/1024px-Toshiba_logo.svg.png",
+        "logo_alt_text": "Toshiba Logo",
         "company": "Toshiba",
         "description": "I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s staff is always avai...",
         "description_full": "I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s staff is always available, always helpful, always reliable and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.\n",
@@ -22,6 +23,7 @@
       },
       {
         "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/accenture-logo.png",
+        "logo_alt_text": "Accenture Logo",
         "company": "Accenture",
         "description": "At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong...",
         "description_full": "At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong>staff is always available, always helpful, always reliable</strong> and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.\n",

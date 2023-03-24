@@ -11,7 +11,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       allureWriter(on, config);
-      return config;
+      return require('./cypress/plugins/index.js')(on, config);
     },
     baseUrl:"https://hc7abfv9fjaakyg28fdla4s0n.js.wpenginepowered.com/",
     apiBaseUrl:"https://businesswirdev.wpengine.com/",
