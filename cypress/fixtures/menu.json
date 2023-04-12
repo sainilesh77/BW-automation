@@ -9,7 +9,7 @@
       {
         "id": 735,
         "title": "Overview",
-        "url": "/",
+        "url": "/news",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "children": []
@@ -17,7 +17,7 @@
       {
         "id": 17,
         "title": "News with Multimedia",
-        "url": "/",
+        "url": "/news/multimedia",
         "description": "",
         "target": "",
         "children": [
@@ -74,7 +74,7 @@
       {
         "id": 18,
         "title": "News by Industry",
-        "url": "/",
+        "url": "/news/industry",
         "description": "",
         "target": "",
         "children": [
@@ -145,7 +145,7 @@
           {
             "id": "18",
             "title": "View All",
-            "url": "/",
+            "url": "/news/industry",
             "description": "",
             "target": "",
             "children": []
@@ -155,7 +155,7 @@
       {
         "id": 20,
         "title": "News by Subject",
-        "url": "/",
+        "url": "/news/subject",
         "description": "",
         "target": "",
         "children": [
@@ -226,7 +226,7 @@
           {
             "id": "20",
             "title": "View All",
-            "url": "/",
+            "url": "/news/subject",
             "description": "",
             "target": "",
             "children": []
@@ -236,7 +236,7 @@
       {
         "id": 19,
         "title": "News by Language",
-        "url": "/",
+        "url": "/news/language",
         "description": "",
         "target": "",
         "children": [
@@ -307,7 +307,7 @@
           {
             "id": "19",
             "title": "View All",
-            "url": "/",
+            "url": "/news/language",
             "description": "",
             "target": "",
             "children": []
@@ -619,7 +619,7 @@
       },
       {
         "id": 28,
-        "title": "Custom-testimonials",
+        "title": "Customer Testimonials",
         "url": "https://services.businesswire.com/customer-testimonials",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "_blank",
@@ -664,12 +664,12 @@
     "title": "Contact",
     "url": "/contact-us",
     "description": "The industry’s only patented and global propriety news content distribution",
-    "target": "_blank",
+    "target": "",
     "children": [
       {
         "id": 213,
         "title": "Overview",
-        "url": "/contactus",
+        "url": "/contact-us",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "children": []

@@ -8,7 +8,7 @@ it('Get global setting with valid parameters', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/"+APIConstants.SETTING.GLOBAL_SETTING,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/"+APIConstants.SETTING.GLOBAL_SETTING,
     }).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
     });
@@ -21,7 +21,7 @@ it('Get global setting invalid parameters', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/"+"TEST",
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/"+"TEST",
     }).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.NOT_FOUND);
     });

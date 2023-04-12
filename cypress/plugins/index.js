@@ -28,8 +28,9 @@ function getConfigurationByFile(file) {
 }
 module.exports = (on, config) => {
     const file = config.env.fileConfig || 'uat';
-
+    if(config.hasOwnProperty('env') &&  config.env.hasOwnProperty('browserResolution')){
+        config.browserResolution = config.env.browserResolution || '1920_768';
+    }
     return getConfigurationByFile(file);
 };
-
 

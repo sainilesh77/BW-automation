@@ -1,5 +1,4 @@
 import dashboardPage from '../object-repository/DashboardPage.json'
-
 class DashboardPage {
     getPageMenu() {
         cy.get(dashboardPage.mainMenuList).should('be.visible')

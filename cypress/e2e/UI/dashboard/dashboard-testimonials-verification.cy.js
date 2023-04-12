@@ -14,7 +14,7 @@ describe('BW-CMS Testimonial Verification test suite', () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/"+APIConstants.TESTIMONIALS.TESTIMONIAL,
+                url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/"+APIConstants.TESTIMONIALS.TESTIMONIAL,
             }).then((response) => { 
                 expect(response.status).to.eq(200);
                 testimonialJson=response.body

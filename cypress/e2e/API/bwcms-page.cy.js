@@ -8,7 +8,7 @@ it('Get Service Page with valid parameters', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.SERVICE_PAGE,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.SERVICE_PAGE,
     }).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
     });
@@ -20,7 +20,7 @@ it('Get Home Page with valid parameters', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.HOME_PAGE,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.HOME_PAGE,
     }).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
     });
@@ -33,7 +33,7 @@ it('Get Page details with invalid parameters value', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/page?name="+"Test",
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+"Test",
     },2000).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.NOT_FOUND);
     });
