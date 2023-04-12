@@ -14,7 +14,7 @@ describe('BW-CMS Footer Verification test suite', () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.MAIN_FOOTER,
+                url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.MAIN_FOOTER,
             }).then((response) => { 
                 expect(response.status).to.eq(200);
                 footerJson=response.body

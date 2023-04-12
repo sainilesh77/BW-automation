@@ -1,0 +1,25 @@
+{
+    "variable":5,
+    "contactUS":{
+        "container":{
+            "width":922,
+            "height":511
+        },
+        "title":{
+            "width":445,
+            "height":220
+        },
+        "description":{
+            "width":574,
+            "height":105
+        },
+        "button":{
+            "width":224,
+            "height":66
+        }
+    },
+    "testimonials":{
+        "width":1230,
+        "height":1725
+    }
+}

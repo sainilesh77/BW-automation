@@ -1,34 +1,148 @@
 [
   {
-    "settings": {
-      "title": "",
-      "subTitle": "what our customers are saying"
-    },
-    "posts": {
-      "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/accenture-logo.png",
-      "company_name": "Accenture",
-      "testimonial_text": "<p>At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong>staff is always available, always helpful, always reliable</strong> and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.</p>\n",
-      "author_name": "Todd Petruska",
-      "author_designation": "Corporate Communications"
-    },
-    "testimonials": [
+    "id": 71,
+    "title": "News",
+    "url": "#",
+    "description": "",
+    "target": "",
+    "children": [
       {
-        "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/1024px-Toshiba_logo.svg.png",
-        "logo_alt_text": "Toshiba Logo",
-        "company": "Toshiba",
-        "description": "I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s staff is always avai...",
-        "description_full": "I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s staff is always available, always helpful, always reliable and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.\n",
-        "authorName": "Todd Petruska",
-        "authorDesignation": "Corporate Communications"
+        "id": 72,
+        "title": "News with Multimedia",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": []
       },
       {
-        "logo": "https://businesswirdev.wpengine.com/wp-content/uploads/2023/01/accenture-logo.png",
-        "logo_alt_text": "Accenture Logo",
-        "company": "Accenture",
-        "description": "At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong...",
-        "description_full": "At Accenture I have worked with Business Wire for over 10 years, and it’s been a wonderful experience. Business Wire’s <strong>staff is always available, always helpful, always reliable</strong> and goes above and beyond in ensuring we get our media announcements to the public accurately and on time.\n",
-        "authorName": "Todd Petruska",
-        "authorDesignation": "Corporate Communications"
+        "id": 73,
+        "title": "News by Industry",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 74,
+        "title": "News by Subject",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 75,
+        "title": "News by Language",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 76,
+        "title": "Tradeshows & Events",
+        "url": "#",
+        "description": "",
+        "target": "",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "title": "Services",
+    "url": "/services",
+    "description": "",
+    "target": "",
+    "children": [
+      {
+        "id": 78,
+        "title": "Public Relations",
+        "url": "/services/public-relations",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 79,
+        "title": "Investor Relations",
+        "url": "/services/investor-relations",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 80,
+        "title": "Distribution & Analytics",
+        "url": "/services/distribution-analytics",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 81,
+        "title": "Media & Journalist Tool",
+        "url": "/services/media-journalist-tools",
+        "description": "",
+        "target": "",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "title": "Resources",
+    "url": "https://services.businesswire.com/resources-education",
+    "description": "",
+    "target": "",
+    "children": [
+      {
+        "id": 83,
+        "title": "Whitepapers & Distribution Lists",
+        "url": "https://services.businesswire.com/resources-education",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 84,
+        "title": "Customer Testimonials",
+        "url": "https://services.businesswire.com/customer-testimonials",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 85,
+        "title": "Sample Press Release",
+        "url": "https://services.businesswire.com/resources-education/sample-press-release",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 86,
+        "title": "Find Your News Online",
+        "url": "https://services.businesswire.com/find-your-news-online",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 87,
+        "title": "Media & Journalist Tools",
+        "url": "/media-journalist-tools",
+        "description": "",
+        "target": "",
+        "children": []
+      },
+      {
+        "id": 88,
+        "title": "Disclosure Resources",
+        "url": "https://services.businesswire.com/resources-education/disclosure-resources",
+        "description": "",
+        "target": "",
+        "children": []
       }
     ]
   }

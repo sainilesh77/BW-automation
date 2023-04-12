@@ -8,7 +8,7 @@ it('Get testimonials with valid parameters', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/"+APIConstants.TESTIMONIALS.TESTIMONIAL,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/"+APIConstants.TESTIMONIALS.TESTIMONIAL,
     }).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
     });
@@ -21,7 +21,7 @@ it('Get testimonials invalid parameters', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/"+"TEST",
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/"+"TEST",
     }).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.NOT_FOUND);
     });

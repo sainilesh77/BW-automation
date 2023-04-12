@@ -1,0 +1,51 @@
+{
+    "1920": {
+      "contact": {
+        "width": 500,
+        "height": 641,
+        "button":{
+          "width": 500,
+          "height": 641
+        }
+
+      },
+      "testimonial": {
+        "width": 500,
+        "height": 641
+      },
+      "contact": {
+        "width": 500,
+        "height": 641
+      },
+      "contact": {
+        "width": 500,
+        "height": 641
+      },
+      "contact": {
+        "width": 500,
+        "height": 641
+      }
+    },
+    "768": {
+      "contact": {
+        "width": 112,
+        "height": 21
+      },
+      "testimonial": {
+        "width": 500,
+        "height": 641
+      },
+      "contact": {
+        "width": 500,
+        "height": 641
+      },
+      "contact": {
+        "width": 500,
+        "height": 641
+      },
+      "contact": {
+        "width": 500,
+        "height": 641
+      }
+    }
+  }

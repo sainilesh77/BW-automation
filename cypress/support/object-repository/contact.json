@@ -1,0 +1,6 @@
+{
+    "container": ".contact-banner-style > .ant-card-body",
+    "title":"contact-banner-text1",
+    "description": "contact-banner-text2",
+    "buttons":"div > a > button"
+}

@@ -14,7 +14,7 @@ describe('BW-CMS Contact US Verification test suite', () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/globalcomponent/"+APIConstants.GLOBAL_COMPONENTS.CONTACT_US,
+                url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/globalcomponent/"+APIConstants.GLOBAL_COMPONENTS.CONTACT_US,
             }).then((response) => { 
                 expect(response.status).to.eq(200);
                 contactJson=response.body

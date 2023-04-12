@@ -11,7 +11,7 @@ it('Get Main Header with valid data', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.MAIN_HEADER,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.MAIN_HEADER,
     }).then((response) => { 
         cy.log('GET /menu main headers'+ JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
@@ -26,7 +26,7 @@ it('Get Main Header with invalid parameter', async () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?"+await APIHelpers.getRandomString(10)+"="+APIConstants.MENUS.MAIN_HEADER,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?"+await APIHelpers.getRandomString(10)+"="+APIConstants.MENUS.MAIN_HEADER,
     }).then((response) => { 
         cy.log('GET /menu with invalid paramters'+ JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.BAD_REQUEST);
@@ -42,7 +42,7 @@ it('Get Main Header with parameter having invalid value', async () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?name="+await APIHelpers.getRandomString(10),
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+await APIHelpers.getRandomString(10),
     }).then((response) => { 
         cy.log(JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.NOT_FOUND);
@@ -57,7 +57,7 @@ it('Get Main Footer with valid values', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.MAIN_FOOTER,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.MAIN_FOOTER,
     }).then((response) => { 
         cy.log(JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
@@ -71,7 +71,7 @@ it('Get Footer Blog and Language with valid parameter and value', async () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.FOOTER_BLOG_AND_LANGUAGE,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.FOOTER_BLOG_AND_LANGUAGE,
     }).then((response) => { 
         cy.log(JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
@@ -85,7 +85,7 @@ it('Get Footer bottom with valid parameter and value', async () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.config('apiBaseUrl')+"wp-json/bwcms/menu?name="+await APIConstants.MENUS.FOOTER_BOTTOM,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+await APIConstants.MENUS.FOOTER_BOTTOM,
     }).then(async (response) => { 
         cy.log(JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
