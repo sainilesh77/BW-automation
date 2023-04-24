@@ -1,0 +1,15 @@
+{
+    "completeHeaderBar":".header-menu.bw-header",
+    "bwLogo":".left-align",
+    "menuTitle":".header-arrow",
+    "languageSection":".ant-select-selection-item",
+    "languageDetails":".ant-select-dropdown.ant-select-dropdown-placement-bottomLeft",
+    "searchBox":"div.search-box",
+    "loginBtn":".header-btn",
+    "signupBtn":".header-btn1",
+    "newTitles":"h2.news-title",
+    "contactBanner":".contact-banner-content",
+    "footerLayout":"footer.ant-layout-footer",
+    "logoFooter":"div.logo-footer",
+    "footerNavList":"div.footer-nav-list"
+}
