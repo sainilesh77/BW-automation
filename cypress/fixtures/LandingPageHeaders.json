@@ -1,8 +1,0 @@
-{
-    "mainHeader":["News","Services","Blog","Resources","Contact","Test1"],
-    "News":["News with Multimedia","News by Industry","News by Subject","News by Language"],
-    "Services":["Overview","Public Relations","Investor Relations","Distribution & Analytics","Media & Journalist Tools"],
-    "Blog":["Overview","Blog","Blog Category"],
-    "Resources":["Overview","Whitepapers and Distribution Lists","Custom-testimonials","Sample Press Release","Find Your News Online","Media & Journalist Tools","Disclosure Resources"],
-    "Contact":["Overview","Office Location","Media & Partnerships","Sign Up for Account"]  
-}
