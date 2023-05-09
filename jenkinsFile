@@ -24,11 +24,9 @@ pipeline {
        stage('Email Report') {
     // Change the recipent address
         sh "zip -r allure-report.zip allure-report"
-        def mailRecipients = "nilesh.softronet@gmail.com"
-        env.ForEmailPlugin = env.WORKSPACE
         if(fileExists('allure-report.zip')){
           emailext(
-            to: "${mailRecipients}",
+            to: "nilesh.softronet@gmail.com",
             from: "nilesh.softronet@gmail.com",
             subject: "Allure Report",
             body: "PFA",
