@@ -21,20 +21,10 @@ pipeline {
                echo 'Deploying....'
            }
        }
-       stage('Email Report') {
-    // Change the recipent address
-        sh "zip -r allure-report.zip allure-report"
-        if(fileExists('allure-report.zip')){
-          emailext(
-            to: "nilesh.softronet@gmail.com",
-            from: "nilesh.softronet@gmail.com",
-            subject: "Allure Report",
-            body: "PFA",
-            attachmentsPattern: 'allure-report.zip'
-        )
-          } else{
-          echo("COULD NOT FIND FILE TO ATTACH")
-          }
-      }
+  stage('Send Summary'){
+    emailext body: '''${SCRIPT, template="allure-report.groovy"}''',
+            subject: "[Jenkins] Test Execution Summary",
+            to: "all@example.com"
+  }
    }
 }
