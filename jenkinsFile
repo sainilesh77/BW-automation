@@ -1,7 +1,9 @@
 pipeline {
    agent any
 
-   tools {nodejs "Node18"}
+   tools {
+    nodejs "Node18"
+    }
 
    stages {
        stage('Dependencies') {
@@ -9,15 +11,15 @@ pipeline {
                sh 'npm i --force'
            }
        }
-             stage('Test 1') {
-                  steps {
+      stage('Test 1') {
+            steps {
                 sh 'npm run cy:uat'
-                  }
+            }
+       }
        stage('Deploy') {
            steps {
                echo 'Deploying....'
            }
        }
-   }
    }
 }
