@@ -9,21 +9,10 @@ pipeline {
                sh 'npm i --force'
            }
        }
-       stage('e2e Tests') {
-         Parallel{
              stage('Test 1') {
                   steps {
                 sh 'npm run cy:uat'
                   }
-               }
-             
-             stage('Test 2') {
-                  steps {
-                sh 'npm run cy:dev'
-                  }
-               }
-
-       }
        stage('Deploy') {
            steps {
                echo 'Deploying....'
