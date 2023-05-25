@@ -10,6 +10,7 @@ module.exports = defineConfig({
     allure:true,
     allureResultsPath:'allure-results',
     allureLogCypress:true,
+    browserResolution:'1920_768'
   },
   e2e: {
     setupNodeEvents(on, config) {

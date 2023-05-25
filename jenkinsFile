@@ -21,10 +21,5 @@ pipeline {
                echo 'Deploying....'
            }
        }
-  stage('Send Summary'){
-    emailext body: '''${SCRIPT, template="allure-report.groovy"}''',
-            subject: "[Jenkins] Test Execution Summary",
-            to: "all@example.com"
-  }
    }
 }

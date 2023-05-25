@@ -2,7 +2,7 @@
   {
     "id": 12,
     "title": "News",
-    "url": "/",
+    "url": "/news",
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "",
     "children": [
@@ -326,7 +326,7 @@
       {
         "id": 210,
         "title": "Overview",
-        "url": "https://services.businesswire.com/",
+        "url": "/services",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "_blank",
         "children": []
@@ -341,9 +341,9 @@
           {
             "id": 185,
             "title": "Press Release Distribution",
-            "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
+            "url": "/services/public-relations/press-release-distribution",
             "description": "",
-            "target": "_blank",
+            "target": "",
             "children": []
           },
           {
@@ -619,7 +619,7 @@
       },
       {
         "id": 28,
-        "title": "Customer Testimonials",
+        "title": "Custom-testimonials",
         "url": "https://services.businesswire.com/customer-testimonials",
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "_blank",
