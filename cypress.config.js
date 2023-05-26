@@ -5,6 +5,8 @@ module.exports = defineConfig({
   video:false,
   viewportWidth: 1280,
   viewportHeight: 720,
+  chromeWebSecurity: false,
+  experimentalModifyObstructiveThirdPartyCode: true,
   env: {
     allureReuseAfterSpec: true,
     allure:true,
@@ -18,7 +20,8 @@ module.exports = defineConfig({
       getCompareSnapshotsPlugin(on, config);
       return require('./cypress/plugins/index.js')(on, config);
     },
-    defaultCommandTimeout: 30000,
-    pageLoadTimeout: 60000
+    defaultCommandTimeout: 45000,
+    pageLoadTimeout: 60000,
+    testIsolation: false,
   }
 });

@@ -686,7 +686,7 @@
             "title": "Press Release Distribution",
             "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
             "description": "",
-            "target": "",
+            "target": "_blank",
             "children": []
           },
           {
