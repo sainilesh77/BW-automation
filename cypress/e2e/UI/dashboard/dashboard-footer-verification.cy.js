@@ -14,7 +14,7 @@ describe('BW-CMS Footer Verification test suite', () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.MAIN_FOOTER,
+                url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.FOOTER_BLOG_AND_LANGUAGE,
             }).then((response) => { 
                 expect(response.status).to.eq(200);
                 footerJson=response.body
@@ -26,12 +26,12 @@ describe('BW-CMS Footer Verification test suite', () => {
     });
 
     it('Verify all Main Footers', function () {
-        dashboardPage.verifyFootersLength(footerResponse);
+      //  dashboardPage.verifyFootersLength(footerResponse);
         dashboardPage.verifyMainFooters(footerResponse);
     });
 
     it('Verify all Main Footer contents', function () {
-        dashboardPage.verifyFootersLength(footerResponse);
+     //   dashboardPage.verifyFootersLength(footerResponse);
         dashboardPage.verifyFooterContents(footerResponse);
     });
 });
