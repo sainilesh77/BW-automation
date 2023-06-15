@@ -20,8 +20,8 @@ module.exports = defineConfig({
       getCompareSnapshotsPlugin(on, config);
       return require('./cypress/plugins/index.js')(on, config);
     },
-    defaultCommandTimeout: 45000,
-    pageLoadTimeout: 60000,
+    defaultCommandTimeout: 15000,
+    pageLoadTimeout: 30000,
     testIsolation: false,
   }
 });
