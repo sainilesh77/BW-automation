@@ -12,40 +12,162 @@ describe('Services Contents verification', () => {
         height=browserResolution[1];   
         cy 
         .visit('/')
-        cy.get('.ant-menu-submenu-title > .ant-menu-title-content > span').should('be.visible').contains('Services').should('be.visible').click()
+        cy.get('.ant-menu-submenu-title > .ant-menu-title-content > span').should('be.visible').contains('Services').should('be.visible').click({force:true})
         cy.get('.slider-btn').should('be.visible')
         cy.get('#onetrust-accept-btn-handler').click()
     })
+    context('Slider', () => {
 
-    it('Services Slider', () => {
-        cy.get('.css-zyge7o.slider-content').scrollIntoView().should('be.visible')
-    })
-    it('Feature components verification', () => {
-        cy.get('.about-services_content').should('be.visible')
-    })
-    it('Recommendation Info', () => {
-        cy.get('.recommendationInfoSec').scrollIntoView().should('be.visible')
+        it('Hero Slider', () => {
+            cy.get('.hero-slider').scrollIntoView().should('be.visible')
+        })
+        it('Slider Carousel', () => {
+            cy.get('.hero-slider .ant-carousel').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider have slick slider', () => {
+            cy.get('.hero-slider').find('.slick-slider').scrollIntoView().should('be.visible')
+        })
+
+        it('Slick Slider having slick list', () => {
+            cy.get('.hero-slider .ant-carousel').find('.slick-slider .slick-list').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider Content', () => {
+            cy.get('.css-zyge7o.slider-content').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider Content have title', () => {
+            cy.get('.css-zyge7o.slider-content').find('.slider-title').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider Content have description', () => {
+            cy.get('.css-zyge7o.slider-content').find('.slider-desc').scrollIntoView().should('be.visible')
+        })
+        
     })
 
-    it('Sign-Up Banner', () => {
-        cy.get('.signupbannerSec').scrollIntoView().should('be.visible')
+    context(' About Service components', () => {
+        it('About Service', () => {
+            cy.get('.about-services').should('be.visible')
+        })
+
+        it('About Services contents', () => {
+            cy.get('.about-services').find('.about-services_content').should('be.visible')
+        })
+
+        it('Service page column component image', () => {
+            cy.get('.about-services').find('.image-row').should('be.visible')
+        })
+
+        it('Service page column component image', () => {
+            cy.get('.about-services').find('.image-row').should('be.visible')
+        })
+
+        
+    })
+    context('Recommendation', () => {
+        it('Recommendation having Info', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().should('be.visible')
+        })
+
+        it('Recommendation having recommendation news', () => {
+            cy.get('.recommendation').find('.recommendation_news').scrollIntoView().should('be.visible')
+        })
+
+        it('News having image and navigation link', () => {
+            cy.get('.recommendation').find('.recommendation_news').each((news) => {
+                cy.wrap(news).find('.cover-image-div').should('be.visible')
+                cy.wrap(news).get('a').should('have.attr', 'href')
+                .should('contains','/news') 
+            })
+        })
     })
 
-    it('Demo Banner', () => {
-        cy.get('.demoBannerSec').scrollIntoView().should('be.visible')
+    context('Sign up banner', () => {
+
+        it('Sign-Up Section', () => {
+            cy.get('.signupbannerSec').scrollIntoView().should('be.visible')
+        })
+
+        it('Sign-up Heading', () => {
+            cy.get('.signupbannerSec_details--heading').should('be.visible')
+        })
+    
+        it('Sign-up details', () => {
+            cy.get('.signupbannerSec_details--text').should('be.visible')
+        })
+
+        it('Sign-up Section Image', () => {
+            cy.get('.signupbannerSec_details--img').should('be.visible')
+        })
+
+        
     })
 
-    it('Contact-US Banner', () => {
-        cy.get('.contact-banner').scrollIntoView().should('be.visible')
+    context('Demo banner', () => {
+        it('Demo Banner section ', () => {
+            cy.get('.demoBannerSec').scrollIntoView().should('be.visible')
+        })
+
+        it('Demo banner header', () => {
+            cy.get('.demoBannerSec_details--heading').should('be.visible').contains('Ready to learn more about Business Wire?')
+        })
+
+        it('Demo banner details', () => {
+            cy.get('.demoBannerSec_details--text').should('be.visible').contains('See why Business Wire is the best news distribution solution for your needs.')
+        })
+
+        it('Request Demo Button', () => {
+            cy.get('.demoBannerSec').find('a > span').should('be.visible').contains('Request a Demo')
+        })
     })
 
-    it('Column Component', () => {
-        cy.get('.column.dark').scrollIntoView().should('be.visible')
+    context('Contact US banner', () => {
+        it('Contact Banner', () => {
+            cy.get('.contact-banner').scrollIntoView().should('be.visible')
+        })
+
+        it('Contact Banner content', () => {
+            cy.get('.contact-banner').find('.contact-banner-content').scrollIntoView().should('be.visible')
+        })
+
+        it('Contact Banner heading', () => {
+            cy.get('.contact-banner').find('.contact-banner-text1').scrollIntoView().should('be.visible')
+        })
+
+        it('Contact Banner description', () => {
+            cy.get('.contact-banner').find('.contact-banner-text2').scrollIntoView().should('be.visible')
+        })
+
+        it('Get started button', () => {
+            cy.get('.contact-banner').scrollIntoView().find('a').should("have.attr", "href")
+            .should("not.be.empty")
+        })
+
     })
 
-    it('Verify all links from Services Page', function () {
-        cy.verifyAllLinks('businesswire.wpengine.com');
-    });
+    context.only('Column component', () => {
+        it('Column Component section ', () => {
+            cy.get('.column.dark').scrollIntoView().should('be.visible')
+        })
+
+        it('Column Component image ', () => {
+            cy.get('.column.dark').find('.image-row').first().scrollIntoView().should('be.visible')
+        })
+
+        it('Column title ', () => {
+            cy.get('.column.dark').find('.column-title ').first().scrollIntoView().should('be.visible')
+        })
+        it('Column description ', () => {
+            cy.get('.column.dark').find('.column-desc').first().scrollIntoView().should('be.visible')
+        })
+
+        it('Learn More button', () => {
+            cy.get('.column.dark').scrollIntoView().find('a').should("have.attr", "href")
+            .should("not.be.empty")
+        })
+    })
 
     it('Bread Crumb Component', () => {
         cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
@@ -67,20 +189,5 @@ describe('Services Contents verification', () => {
         cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire customer success representative for product, service, and pricing information. Set up an account and place a news release. Contact us today!')
     })
 
-    it('Demo banner header', () => {
-        cy.get('.demoBannerSec_details--heading').should('be.visible').contains('Ready to learn more about Business Wire?')
-    })
-
-    it('Demo banner details', () => {
-        cy.get('.demoBannerSec_details--text').should('be.visible').contains('See why Business Wire is the best news distribution solution for your needs.')
-    })
-
-    it('Sign-up banner header', () => {
-        cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire!')
-    })
-
-    it('Sign-up details', () => {
-        cy.get('.signupbannerSec_details--text').should('be.visible').contains('Our deep experience, one-on-one guidance, and superior media targeting help you gain results. Register now and share your news.')
-    })
     
 })

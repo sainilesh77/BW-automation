@@ -6,7 +6,7 @@
     "description": "The industry’s only patented and global propriety news content distribution.",
     "target": "",
     "active": true,
-    "language": null,
+    "language": "",
     "children": [
       {
         "id": 735,
@@ -15,7 +15,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -25,7 +25,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": [
           {
             "id": 52,
@@ -34,7 +34,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -44,7 +44,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -54,7 +54,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -64,7 +64,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -74,7 +74,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -84,7 +84,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -94,7 +94,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -104,7 +104,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -114,7 +114,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           }
         ]
@@ -126,7 +126,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": [
           {
             "id": 60,
@@ -135,7 +135,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -145,7 +145,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -155,7 +155,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -165,7 +165,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -175,7 +175,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -185,7 +185,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -195,7 +195,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -205,7 +205,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -215,7 +215,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           }
         ]
@@ -227,7 +227,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": [
           {
             "id": 68,
@@ -236,7 +236,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -246,7 +246,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -256,7 +256,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -266,7 +266,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -276,7 +276,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -286,7 +286,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -296,7 +296,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -306,7 +306,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -316,7 +316,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           }
         ]
@@ -328,7 +328,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       }
     ]
@@ -340,7 +340,7 @@
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "",
     "active": true,
-    "language": null,
+    "language": "",
     "children": [
       {
         "id": 210,
@@ -349,7 +349,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -359,16 +359,16 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": [
           {
             "id": 185,
             "title": "Press Release Distribution",
-            "url": "/services/public-relations/press-release-distribution",
+            "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -378,7 +378,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -388,7 +388,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -398,7 +398,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -408,7 +408,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -418,7 +418,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -428,7 +428,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           }
         ]
@@ -440,7 +440,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": [
           {
             "id": 186,
@@ -449,7 +449,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -459,7 +459,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -469,7 +469,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -479,7 +479,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -489,7 +489,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -499,7 +499,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -509,7 +509,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -519,7 +519,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -529,7 +529,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           }
         ]
@@ -541,7 +541,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": [
           {
             "id": 201,
@@ -550,7 +550,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -560,7 +560,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -570,7 +570,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -580,7 +580,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -590,7 +590,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -600,7 +600,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           }
         ]
@@ -612,7 +612,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": [
           {
             "id": 207,
@@ -621,7 +621,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -631,7 +631,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -641,7 +641,7 @@
             "description": "",
             "target": "_blank",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           },
           {
@@ -651,7 +651,7 @@
             "description": "",
             "target": "",
             "active": true,
-            "language": null,
+            "language": "",
             "children": []
           }
         ]
@@ -665,7 +665,7 @@
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "_blank",
     "active": true,
-    "language": null,
+    "language": "",
     "children": [
       {
         "id": 211,
@@ -674,7 +674,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -684,7 +684,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -694,7 +694,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -704,7 +704,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       }
     ]
@@ -716,7 +716,7 @@
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "_blank",
     "active": true,
-    "language": null,
+    "language": "",
     "children": [
       {
         "id": 212,
@@ -725,7 +725,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -735,7 +735,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "_blank",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -745,7 +745,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "_blank",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -755,7 +755,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "_blank",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -765,7 +765,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "_blank",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       }
     ]
@@ -777,7 +777,7 @@
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "",
     "active": true,
-    "language": null,
+    "language": "",
     "children": [
       {
         "id": 213,
@@ -786,7 +786,7 @@
         "description": "The industry’s only patented and global propriety news content distribution",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -796,7 +796,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       },
       {
@@ -806,7 +806,7 @@
         "description": "",
         "target": "",
         "active": true,
-        "language": null,
+        "language": "",
         "children": []
       }
     ]

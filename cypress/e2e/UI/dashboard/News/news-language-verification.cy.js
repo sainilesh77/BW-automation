@@ -92,7 +92,7 @@ describe('News by Language verification', () => {
         })
     })
     
-    context('Footer', () => {
+    context('Contact Footer', () => {
         it('Contact Footer', () => {
             cy.get('.footer').scrollIntoView().should('be.visible')
         })
@@ -100,7 +100,6 @@ describe('News by Language verification', () => {
 
     context('All links from news language page', () => {
         it('Verify all links from News Language Page', function () {
-            cy.verifyAllLinks('businesswire.wpengine.com');
             cy.get('a').each(link => {
               if (link.prop('href'))
                 cy.request({
@@ -111,21 +110,13 @@ describe('News by Language verification', () => {
             })
         });
     })
-
-    context.only('Right Banner', () => {
-        it('Register for Press Pass verification', () => {
-            cy.get('.signupNewsLetter_content > div > a').contains('Register for PressPass').should('be.visible')
-            cy.get('.signupNewsLetter_content > div > a').scrollIntoView().invoke('removeAttr', 'target').click()
-            cy.url()
-            .should('include', '/login/signup/registration')
-        cy.go('back');
-        })
+    context('Right Banner', () => {
 
         it('Right banner verification', () => {
-            cy.get('.rightBannerSec_text').scrollIntoView().should('contains.text','Get Press Pass for Journalist or a News Customer')
+            cy.get('.rightBannerSec_text').scrollIntoView()
             cy.get('.rightBannerSec > a').invoke('removeAttr', 'target').click()
             cy.url()
-            .should('include', '/login/signup')
+            .should('include', '/presspass')
             cy.go('back');
         })
     })

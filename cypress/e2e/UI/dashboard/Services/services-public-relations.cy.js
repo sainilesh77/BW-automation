@@ -126,7 +126,7 @@ describe('Services Public Relations verification', () => {
         cy.get('.leadgenbannerSec_details').find('div > div > .leadgenbanner-macBookProMockupimg').should('be.visible')
     })
 
-    it.only('Leadgen Banner having fill form', () => {
+    it('Leadgen Banner having fill form', () => {
         cy.get('.leadgenbannerSec_details > div> div[align="start"]').should('be.visible')
     })
     

@@ -20,21 +20,21 @@ describe('News With Multimedia verification', () => {
         it('News Category Section', () => {
             cy.get('.newsByCatSec').scrollIntoView().should('be.visible')
         })
-        it('News With Multimedia section have heading', () => {
+        it('News with Multimedia section have heading', () => {
             cy.get('.contentSec--heading').should('be.visible').contains('News With Multimedia')
         })
-        it('News With Multimedia section have sub heading', () => {
+        it('News with Multimedia section have sub heading', () => {
             cy.get('.newsByCatSec').find('.contentSec--subheading').should('be.visible')
         })
-        it('News With Multimedia section have sort filters', () => {
+        it('News with Multimedia section have sort filters', () => {
             cy.get('.sortFilterSec').should('exist');
         })
 
-        it('News With Multimedia section have clear fix', () => {
+        it('News with Multimedia section have clear fix', () => {
             cy.get('.clearfix').should('exist');
         })
 
-        it('News With Multimedia section have news item', () => {
+        it('News with Multimedia section have news item', () => {
             cy.get('.news_item').should('exist');
         })
 
@@ -50,57 +50,56 @@ describe('News With Multimedia verification', () => {
         })
 
         it('News Letter Base Box Text Heading verification', () => {
-            cy.get('.signupNewsLetter_content').scrollIntoView().find('.signupnewsletterBaseText_heading').should('be.visible')
+            cy.get('.signupNewsLetter_content').scrollIntoView().find('.signupnewsletterBaseText_heading').contains('Breaking News Delivered to Your Inbox').should('be.visible')
         })
 
         it('News Letter Base Box Text Sub Heading verification', () => {
-            cy.get('.signupNewsLetter_content').find('.signupnewsletterBaseText_subheading').should('be.visible')
+            cy.get('.signupNewsLetter_content').find('.signupnewsletterBaseText_subheading').contains('Become a registered PressPass member and receive up-to-date news on the topics you cover.').should('be.visible')
         })
-    })
+    })  
 
-    context('Feature Components', () => {
-    it('Feature components Section', () => {
-        cy.get('.featureComponentSec').scrollIntoView().should('be.visible')
-    })
+    context('Feature component', () => {
+        it('Feature components Section', () => {
+            cy.get('.featureComponentSec').scrollIntoView().should('be.visible')
+        })
 
-    it('Feature components have feature container', () => {
-        cy.get('.featureComponentSec').find('.featureComponentContainer').should('be.visible')
-    })
+        it('Feature components have feature container', () => {
+            cy.get('.featureComponentSec').find('.featureComponentContainer').should('be.visible')
+        })
 
-    it('Feature components have cover image', () => {
-        cy.get('.featureComponentSec').each((ele)=>{
-            cy.wrap(ele).find('.cover-image-div').should('be.visible')
+        it('Feature components have cover image', () => {
+            cy.get('.featureComponentSec').each((ele)=>{
+                cy.wrap(ele).find('.cover-image-div').should('be.visible')
+            })
+        })
+        
+        it('Feature components have title', () => {
+            cy.get('.featureComponentSec').each((ele)=>{
+                cy.wrap(ele).find('.align-text-center').should('be.visible')
+            })
+        })
+
+        it('Feature components have description', () => {
+            cy.get('.featureComponentSec').each((ele)=>{
+                cy.wrap(ele).find('.description-text').should('be.visible')
+            })
+        })
+
+        it('Feature components have Learn more Button', () => {
+            cy.get('.featureComponentSec').each((ele)=>{
+                cy.wrap(ele).find('.action-btn').should('be.visible')
+            })
         })
     })
     
-    it('Feature components have title', () => {
-        cy.get('.featureComponentSec').each((ele)=>{
-            cy.wrap(ele).find('.align-text-center').should('be.visible')
-        })
-    })
-
-    it('Feature components have description', () => {
-        cy.get('.featureComponentSec').each((ele)=>{
-            cy.wrap(ele).find('.description-text').should('be.visible')
-        })
-    })
-
-    it('Feature components have Learn more Button', () => {
-        cy.get('.featureComponentSec').each((ele)=>{
-            cy.wrap(ele).find('.action-btn').should('be.visible')
-        })
-    })
-    })
-    
-    context('Footer', () => {
+    context('Contact Footer', () => {
         it('Contact Footer', () => {
             cy.get('.footer').scrollIntoView().should('be.visible')
         })
     })
 
-    context('All links from News with multimedia Page', () => {
-        it('Verify all links from News with Multimedia Page', function () {
-            cy.verifyAllLinks('businesswire.wpengine.com');
+    context('All links from news language page', () => {
+        it('Verify all links from News Language Page', function () {
             cy.get('a').each(link => {
               if (link.prop('href'))
                 cy.request({
@@ -111,13 +110,13 @@ describe('News With Multimedia verification', () => {
             })
         });
     })
-
     context('Right Banner', () => {
+
         it('Right banner verification', () => {
-            cy.get('.rightBannerSec_text').scrollIntoView().should('contains.text','Get breaking news delivered to your inbox with PressPass')
+            cy.get('.rightBannerSec_text').scrollIntoView()
             cy.get('.rightBannerSec > a').invoke('removeAttr', 'target').click()
             cy.url()
-            .should('include', '/media-journalist-tools/presspass')
+            .should('include', '/presspass')
             cy.go('back');
         })
     })

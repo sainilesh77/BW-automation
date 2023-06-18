@@ -111,20 +111,20 @@ describe('Media and Journalist verification', () => {
         cy.get('.signupbannerSec_details--text').should('be.visible').contains('Our deep experience, one-on-one guidance, and superior media targeting help you gain results. Register now and share your news.')
     })
 
-    // it('Leadgen Banner', () => {
-    //     cy.get('.leadgenbannerSec').should('be.visible')
-    // })
+    it('Leadgen Banner', () => {
+        cy.get('.leadgenbannerSec').should('be.visible')
+    })
 
-    // it('Leadgen Banner having details dection', () => {
-    //     cy.get('.leadgenbannerSec').find('.leadgenbannerSec_details').should('be.visible')
-    // })
+    it('Leadgen Banner having details dection', () => {
+        cy.get('.leadgenbannerSec').find('.leadgenbannerSec_details').should('be.visible')
+    })
 
-    // it('Leadgen Banner having mock image', () => {
-    //     cy.get('.leadgenbannerSec_details').find('div > div > .leadgenbanner-macBookProMockupimg').should('be.visible')
-    // })
+    it('Leadgen Banner having mock image', () => {
+        cy.get('.leadgenbannerSec_details').find('div > div > .leadgenbanner-macBookProMockupimg').should('be.visible')
+    })
 
-    // it('Leadgen Banner having fill form', () => {
-    //     cy.get('.leadgenbannerSec_details > div> div[align="start"]').should('be.visible')
-    // })
+    it('Leadgen Banner having fill form', () => {
+        cy.get('.leadgenbannerSec_details > div> div[align="start"]').should('be.visible')
+    })
     
 })

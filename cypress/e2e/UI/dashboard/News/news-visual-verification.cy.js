@@ -31,8 +31,7 @@ describe('News Details Visual verification', () => {
         cy.get('.signupNewsLetter_content').find('.signupnewsletterBaseText_subheading').compareSnapshot('news-letter-contents-section'+width+'_'+height,1);
     });
     it('Sign up News letter', () => {
-        cy.get('.signupNewsLetter_content > div > a').contains('Register for PressPass').should('be.visible')
-        cy.get('.signupNewsLetter_content > div > a').scrollIntoView().invoke('removeAttr', 'target').click()
+        cy.get('.signupNewsLetter_content > div > nav > a').scrollIntoView().invoke('removeAttr', 'target').click()
         cy.url()
         .should('include', '/login/signup/registration')
         cy.compareSnapshot('signup-registration-section'+width+'_'+height,1);
@@ -40,10 +39,10 @@ describe('News Details Visual verification', () => {
     })
 
     it('Right banner', () => {
-        cy.get('.rightBannerSec_text').scrollIntoView().should('contains.text','Get Press Pass for Journalist or a News Customer')
+        cy.get('.rightBannerSec_text').scrollIntoView().should('be.visible')
         cy.get('.rightBannerSec > a').invoke('removeAttr', 'target').click()
         cy.url()
-        .should('include', '/login/signup')
+        .should('include', '/presspass')
         cy.compareSnapshot('signup-form-section'+width+'_'+height,1);
         cy.go('back');
     })

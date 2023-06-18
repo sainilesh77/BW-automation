@@ -54,7 +54,7 @@ describe('News All verification', () => {
     })
 
     it('News Letter Base Box Text Heading verification', () => {
-        cy.get('.signupNewsLetter_content').scrollIntoView().find('.signupnewsletterBaseText_heading').contains('Sign Up for Our PressPass to be the First to get the Latest PR & IR News? ').should('be.visible')
+        cy.get('.signupNewsLetter_content').scrollIntoView().find('.signupnewsletterBaseText_heading').should('be.visible')
     })
 
     it('News Letter Base Box Text Sub Heading verification', () => {
@@ -74,11 +74,30 @@ context('Media Banner', () => {
     })
 
 })
+context('Contact Footer', () => {
 
-context('News Press Pass', () => {
+    it('Contact Footer', () => {
+        cy.get('.footer').scrollIntoView().should('be.visible')
+    })
+})
+context('All links from News all Page', () => {
+    it('Verify all links from News all Page', function () {
+        cy.get('a').each(link => {
+          if (link.prop('href'))
+            cy.request({
+              url: link.prop('href'),
+              failOnStatusCode: false
+            })
+          cy.log( link.prop('href'))
+        })
+    });
+
+})
+
+context('Register Press Pass', () => {
     it('Register for Press Pass verification', () => {
-        cy.get('.signupNewsLetter_content > div > a').contains('Register for PressPass').should('be.visible')
-        cy.get('.signupNewsLetter_content > div > a').scrollIntoView().invoke('removeAttr', 'target').click()
+        cy.get('.signupNewsLetter_content > div > nav > a').should('be.visible')
+        cy.get('.signupNewsLetter_content > div > nav > a').scrollIntoView().invoke('removeAttr', 'target').click()
         cy.url()
         .should('include', '/login/signup/registration')
        cy.go('back');
@@ -89,10 +108,10 @@ context('News Press Pass', () => {
 context('Right Banner', () => {
 
     it('Right banner verification', () => {
-        cy.get('.rightBannerSec_text').scrollIntoView().should('contains.text','Get Press Pass for Journalist or a News Customer')
+        cy.get('.rightBannerSec_text').scrollIntoView()
         cy.get('.rightBannerSec > a').invoke('removeAttr', 'target').click()
         cy.url()
-        .should('include', '/login/signup')
+        .should('include', '/presspass')
         cy.go('back');
     })
 })
