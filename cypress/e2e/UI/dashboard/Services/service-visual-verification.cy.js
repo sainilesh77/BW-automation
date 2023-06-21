@@ -1,6 +1,6 @@
 let resolutionData,resolution,browserResolution,width,height;
 
-describe('Services Contents verification', () => {
+describe('Services Visual verification', () => {
     before(() => {
         resolution=Cypress.env('browserResolution')
         cy.fixture(resolution).then((contactComponent) => {

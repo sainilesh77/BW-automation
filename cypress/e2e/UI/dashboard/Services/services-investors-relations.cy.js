@@ -54,7 +54,7 @@ describe('Services Investors Relations verification', () => {
         cy.get('.column.dark').scrollIntoView().should('be.visible')
     })
 
-    it('Verify all links from Services Page', function () {
+    it('Verify all links from Investor Relation Page', function () {
         cy.verifyAllLinks('businesswire.wpengine.com');
         cy.get('a').each(link => {
           if (link.prop('href'))
@@ -84,13 +84,14 @@ describe('Services Investors Relations verification', () => {
             cy.wrap(ele).find('.service-card-title').should('be.visible')
             cy.wrap(ele).find('.service-card-description').should('be.visible')
             cy.wrap(ele).find('a > .service-card-button').should('be.visible')
+
             
         })
     })
 
     it('Service Card Having Find Out More Button', () => {
         cy.get('.serviceofficecard').find('.ant-card-body').should('be.visible').each((ele)=>{
-            cy.wrap(ele).find('a > .service-card-button').should('be.visible')
+            cy.wrap(ele).find('.service-card-text btn-text').should('be.visible')
         })
     })
 
@@ -100,11 +101,11 @@ describe('Services Investors Relations verification', () => {
     })
 
     it('Contact Description', () => {
-        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire customer success representative for product, service, and pricing information. Set up an account and place a news release. Contact us today!')
+        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire representative for product, service, and pricing information. Set up an account and share your news.')
     })
 
     it('Sign-up banner header', () => {
-        cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire!')
+        cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire')
     })
 
     it('Sign-up details', () => {
@@ -127,4 +128,6 @@ describe('Services Investors Relations verification', () => {
     //     cy.get('.leadgenbannerSec_details > div> div[align="start"]').should('be.visible')
     // })
     
+
 })
+

@@ -48,40 +48,42 @@ describe('Services Public Relations verification', () => {
         cy.get('.serviceofficecard').compareSnapshot('service-office-card-component'+width+'_'+height,1);
     });
 
-    // it('Bread Crumb Component', () => {
-    //     cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
-    // })
+    it('Bread Crumb Component', () => {
+        cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
+    })
 
-    // it('Service Page Title', () => {
-    //     cy.title().should('eq', 'Services | Business Wire')
-    // })
+    it('Public Relation Page Title', () => {
+        cy.title().should('eq', 'public-relations | Business Wire')  //code updated by amar
+    })
 
-    // it('Reommendation details', () => {
-    //     cy.get('.cover-image-div').should('be.visible')
-    // })
+    it('Reommendation details', () => {
+        cy.get('.cover-image-div').should('be.visible')
+    })
 
-    // it('Contact Header', () => {
-    //     cy.get('.contact-banner-text1').should('be.visible').contains('Contact Us')
-    // })
+    it('Contact Header', () => {
+        cy.get('.contact-banner-text1').should('be.visible').contains('Contact Us')
+    })
 
-    // it('Contact Description', () => {
-    //     cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire customer success representative for product, service, and pricing information. Set up an account and place a news release. Contact us today!')
-    // })
+    it('Contact Description', () => {
+        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire representative for product, service, and pricing information. Set up an account and share your news.')
+    })
 
-    // it('Demo banner header', () => {
-    //     cy.get('.demoBannerSec_details--heading').should('be.visible').contains('Ready to learn more about Business Wire?')
-    // })
+    it('Demo banner header', () => {
+        cy.get('.demoBannerSec_details--heading').should('be.visible').contains('Ready to learn more about Business Wire?')
+    })
 
-    // it('Demo banner details', () => {
-    //     cy.get('.demoBannerSec_details--text').should('be.visible').contains('See why Business Wire is the best news distribution solution for your needs.')
-    // })
+    it('Demo banner details', () => {
+        cy.get('.demoBannerSec_details--text').should('be.visible').contains('See why Business Wire is the best news distribution solution for your needs.')
+    })
 
-    // it('Sign-up banner header', () => {
-    //     cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire!')
-    // })
+    it('Sign-up banner header', () => {
+        cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire')
+    })
 
-    // it('Sign-up details', () => {
-    //     cy.get('.signupbannerSec_details--text').should('be.visible').contains('Our deep experience, one-on-one guidance, and superior media targeting help you gain results. Register now and share your news.')
-    // })
+    it('Sign-up details', () => {
+        cy.get('.signupbannerSec_details--text').should('be.visible').contains('Our deep experience, one-on-one guidance, and superior media targeting help you gain results. Register now and share your news.')
+    })
+
+
     
 })

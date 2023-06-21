@@ -4,7 +4,7 @@ class APIConstants {
     //footer-navigation
     MENUS = {
         MAIN_HEADER: "main-header-navigation",
-        MAIN_FOOTER: "main-footer-navigation",
+        MAIN_FOOTER: "footer-navigation",
         FOOTER_BLOG_AND_LANGUAGE: "footer-navigation",
         FOOTER_BOTTOM: "footer-bottom-navigation"
     }
@@ -12,6 +12,18 @@ class APIConstants {
     PAGE = {
         SERVICE_PAGE: "service",
         HOME_PAGE: "home",
+        /* Code added by AMAR*/
+        ALL_NEWS:"news",
+        NEWS_CATEGORY:"news-by-category",
+        NEWS_DETAILS:"news-details",
+        PUBLIC_RELATION:"public-relations",
+        INVESTOR_RELATION:"investor-relations",
+        DISTRIBUTION_ANALYTICS:"distribution-analytics",
+        MEDIA_JOURNALIST_TOOL:"media-journalist-tools",
+        SERVICE_DETAILS:"category-detail",
+        CONTACT_US:"contact",
+        OFFICE_LOCATION:"office-locations",
+        MEDIA_PARTNERSHIP_CONTACTS:"media-partnership-contracts",
     }
 
     SETTING={GLOBAL_SETTING:"globalsettings"}
@@ -27,7 +39,12 @@ class APIConstants {
         SIGN_UP:"sign_up",
         RIGHT:"right",
         WHO_WE_ARE:"who_we_are",
-        VIDEO_COMPONENT:"video_component"
+        VIDEO_COMPONENT:"video_component",
+        /* Code added by AMAR*/
+        MEDIA_BANNER:"media-banner",
+        TWITTER:"twitter",
+        TESTIMONIALS:"testimonials"
+
     }
 
     RESPONSE={

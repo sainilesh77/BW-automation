@@ -77,7 +77,7 @@ describe('Contact Media and Partnership verification', () => {
     })
 
     it('Contact Description', () => {
-        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire customer success representative for product, service, and pricing information. Set up an account and place a news release. Contact us today!')
+        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire representative for product, service, and pricing information. Set up an account and share your news.')
     })
 
     // it('Demo banner header', () => {

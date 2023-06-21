@@ -98,8 +98,8 @@ describe('News With Multimedia verification', () => {
         })
     })
 
-    context('All links from news language page', () => {
-        it('Verify all links from News Language Page', function () {
+    context('All links from News With Multimedia page', () => {
+        it('Verify all links from News With Multimedia', function () {
             cy.get('a').each(link => {
               if (link.prop('href'))
                 cy.request({

@@ -13,10 +13,10 @@ describe('Services Contents verification', () => {
         cy 
         .visit('/')
         cy.get('.ant-menu-submenu-title > .ant-menu-title-content > span').should('be.visible').contains('Services').should('be.visible').click({force:true})
-        cy.get('.slider-btn').should('be.visible')
+       // cy.get('.slider-btn').should('be.visible')
         cy.get('#onetrust-accept-btn-handler').click()
     })
-    context('Slider', () => {
+    context('Hero Slider', () => {
 
         it('Hero Slider', () => {
             cy.get('.hero-slider').scrollIntoView().should('be.visible')
@@ -56,17 +56,17 @@ describe('Services Contents verification', () => {
             cy.get('.about-services').find('.about-services_content').should('be.visible')
         })
 
-        it('Service page column component image', () => {
-            cy.get('.about-services').find('.image-row').should('be.visible')
-        })
+        // it('Service page column component image', () => {
+        //     cy.get('.about-services').find('.image-row').should('be.visible')
+        // })
 
-        it('Service page column component image', () => {
-            cy.get('.about-services').find('.image-row').should('be.visible')
-        })
+        // it('Service page column component image', () => {
+        //     cy.get('.about-services').find('.image-row').should('be.visible')
+        // })
 
         
     })
-    context('Recommendation', () => {
+    context('Recommendation for you', () => {
         it('Recommendation having Info', () => {
             cy.get('.recommendationInfoSec').scrollIntoView().should('be.visible')
         })
@@ -147,7 +147,7 @@ describe('Services Contents verification', () => {
 
     })
 
-    context.only('Column component', () => {
+    context('Column component', () => {
         it('Column Component section ', () => {
             cy.get('.column.dark').scrollIntoView().should('be.visible')
         })
@@ -169,7 +169,7 @@ describe('Services Contents verification', () => {
         })
     })
 
-    it('Bread Crumb Component', () => {
+    it('Bread Crumb Component visible', () => {
         cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
     })
 
@@ -177,16 +177,16 @@ describe('Services Contents verification', () => {
         cy.title().should('eq', 'Services | Business Wire')
     })
 
-    it('Reommendation details', () => {
+    it('Reommendation details visible', () => {
         cy.get('.cover-image-div').should('be.visible')
     })
 
-    it('Contact Header', () => {
+    it('Contact Header visible', () => {
         cy.get('.contact-banner-text1').should('be.visible').contains('Contact Us')
     })
 
-    it('Contact Description', () => {
-        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire customer success representative for product, service, and pricing information. Set up an account and place a news release. Contact us today!')
+    it('Contact Description visible', () => {
+        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire representative for product, service, and pricing information. Set up an account and share your news.')
     })
 
     

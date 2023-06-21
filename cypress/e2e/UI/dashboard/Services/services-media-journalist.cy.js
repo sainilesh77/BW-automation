@@ -54,7 +54,7 @@ describe('Media and Journalist verification', () => {
         cy.get('.column.dark').scrollIntoView().should('be.visible')
     })
 
-    it('Verify all links from Services Page', function () {
+    it('Verify all links from Media & journalist Page', function () {
         cy.verifyAllLinks('businesswire.wpengine.com');
         cy.get('a').each(link => {
           if (link.prop('href'))
@@ -100,12 +100,13 @@ describe('Media and Journalist verification', () => {
     })
 
     it('Contact Description', () => {
-        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire customer success representative for product, service, and pricing information. Set up an account and place a news release. Contact us today!')
+        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire representative for product, service, and pricing information. Set up an account and share your news.')
     })
 
     it('Sign-up banner header', () => {
-        cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire!')
+        cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire')
     })
+
 
     it('Sign-up details', () => {
         cy.get('.signupbannerSec_details--text').should('be.visible').contains('Our deep experience, one-on-one guidance, and superior media targeting help you gain results. Register now and share your news.')

@@ -17,3 +17,4 @@ describe('Careers verification', () => {
         cy.compareSnapshot('careers-page',1);
     });
 })
+

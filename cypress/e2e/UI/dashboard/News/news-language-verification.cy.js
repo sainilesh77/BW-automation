@@ -98,8 +98,8 @@ describe('News by Language verification', () => {
         })
     })
 
-    context('All links from news language page', () => {
-        it('Verify all links from News Language Page', function () {
+    context('All links from News by Language page', () => {
+        it('Verify all links from News by Language Page', function () {
             cy.get('a').each(link => {
               if (link.prop('href'))
                 cy.request({

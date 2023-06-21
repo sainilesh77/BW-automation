@@ -17,3 +17,5 @@ describe('Terms and conditions verification', () => {
         cy.compareSnapshot('terms-use-page');
     });
 })
+
+

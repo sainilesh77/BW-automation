@@ -98,4 +98,50 @@ it('Get video components details with valid parameters', () => {
     });
 });
 
+
+/* Code added by AMAR*/
+
+it('Get Media banner with valid parameters', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/globalcomponent/"+APIConstants.GLOBAL_COMPONENTS.MEDIA_BANNER,
+    }).then((response) => { 
+        expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+    });
+});
+
+it('Get Twitter banner with valid parameters', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/globalcomponent/"+APIConstants.GLOBAL_COMPONENTS.TWITTER,
+    }).then((response) => { 
+        expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+        });
+});
+
+
+it('Get Testimonials with valid parameters', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/"+APIConstants.GLOBAL_COMPONENTS.TESTIMONIALS,
+    }).then((response) => { 
+        expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+        });
+});
+
+
+
+
+
+
+
 })

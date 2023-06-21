@@ -36,6 +36,7 @@ describe('BW-CMS Verification test suite', () => {
     it('Verify all Sub Headers for each main header', function () {
         dashboardPage.verifySubHeadersLength(menusResponse);
         dashboardPage.verifySubHeaderv2(menusResponse);
+    
     });
 
     it('Verify all Headers Links', function () {

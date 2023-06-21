@@ -90,8 +90,8 @@ context('Contact Footer', () => {
         cy.get('.footer').scrollIntoView().should('be.visible')
     })
 })
-context('All links from News Industry Page', () => {
-    it('Verify all links from News Industry Page', function () {
+context('All links from News by Industry Page', () => {
+    it('Verify all links from News by Industry Page', function () {
         cy.get('a').each(link => {
           if (link.prop('href'))
             cy.request({
