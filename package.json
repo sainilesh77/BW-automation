@@ -9,6 +9,7 @@
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "test": "npx cypress run --spec cypress/e2e/ --env allure=true",
     "cy:uat": "npx cypress run --env fileConfig=uat,browserResolution=1920_768 --browser chrome --spec cypress/e2e/ --env allure=true",
+    "cy:alpha": "npx cypress run --env fileConfig=alpha,browserResolution=1920_768 --browser chrome --spec cypress/e2e/ --env allure=true",
     "cy:uat-chrome": "npx cypress run --env fileConfig=uat --browser chrome --spec cypress/e2e/Visual/ --env allure=true",
     "cy:uat-firefox": "npx cypress run --env fileConfig=uat --browser firefox --spec cypress/e2e/ --env allure=true",
     "cy:uat-edge": "npx cypress run --env fileConfig=uat --browser edge --spec cypress/e2e/ --env allure=true",
