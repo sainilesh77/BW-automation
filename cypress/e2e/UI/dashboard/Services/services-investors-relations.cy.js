@@ -114,6 +114,56 @@ describe('Services Investors Relations verification', () => {
             cy.get('.leadgenbannerSec_details > div> div[align="start"]').should('be.visible')
         })
     })
+    context('Contact Footer', () => {
+
+        it('Contact Footer section', () => {
+            cy.get('.footer').scrollIntoView().should('be.visible')
+        })
+        
+        it('Footer Gutter Space', () => {
+            cy.get('.footer').scrollIntoView().find('.footer-gutter-space').should('be.visible')
+        })
+    
+        it('Next Footer container', () => {
+            cy.get('.next-footer-container').scrollIntoView().should('be.visible')
+        })
+    
+    })
+    
+    context('Copyright', () => {
+    
+        it('Copyright section', () => {
+            cy.get('.copyright').scrollIntoView().should('be.visible')
+        })
+    
+        it('Copyright contents', () => {
+            cy.get('.copyright-content').scrollIntoView().should('be.visible')
+        })
+    
+        it('Copyright contents should have copyright links', () => {
+            cy.get('.copyright-content').scrollIntoView().find('a[rel="noreferrer"]').should('be.visible')
+        })
+    
+    })
+
+    context('Generic Components',()=>{
+        it('Bread Crumb Component', () => {
+            cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
+        })
+    
+        it('Bread Crumb link', () => {
+            cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-link').should('be.visible')
+        })
+
+        it('Bread Crumb Seperator', () => {
+            cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-separator').should('be.visible')
+        })
+
+        it('Service Page Title', () => {
+            cy.title().should('eq', 'investor-relations | Business Wire')
+        })
+
+    })
 
     context('Service Office Component',()=>{
         it('Service Office section', () => {
@@ -139,57 +189,6 @@ describe('Services Investors Relations verification', () => {
             cy.url()
             .should('include', '/investor-relations-services/press-release-disclosure')
             cy.go('back');
-        })
-
-        context('Contact Footer', () => {
-
-            it('Contact Footer section', () => {
-                cy.get('.footer').scrollIntoView().should('be.visible')
-            })
-            
-            it('Footer Gutter Space', () => {
-                cy.get('.footer').scrollIntoView().find('.footer-gutter-space').should('be.visible')
-            })
-        
-            it('Next Footer container', () => {
-                cy.get('.next-footer-container').scrollIntoView().should('be.visible')
-            })
-        
-        })
-        
-        context('Copyright', () => {
-        
-            it('Copyright section', () => {
-                cy.get('.copyright').scrollIntoView().should('be.visible')
-            })
-        
-            it('Copyright contents', () => {
-                cy.get('.copyright-content').scrollIntoView().should('be.visible')
-            })
-        
-            it('Copyright contents should have copyright links', () => {
-                cy.get('.copyright-content').scrollIntoView().find('a[rel="noreferrer"]').should('be.visible')
-            })
-        
-        })
-
-        context('Generic Components',()=>{
-            it('Bread Crumb Component', () => {
-                cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
-            })
-        
-            it('Bread Crumb link', () => {
-                cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-link').should('be.visible')
-            })
-    
-            it('Bread Crumb Seperator', () => {
-                cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-separator').should('be.visible')
-            })
-    
-            it('Service Page Title', () => {
-                cy.title().should('eq', 'investor-relations | Business Wire')
-            })
-    
         })
     })
 })

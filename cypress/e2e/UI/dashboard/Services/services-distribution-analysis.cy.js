@@ -115,32 +115,6 @@ describe('Services Distrubution & Analytics Page verification', () => {
         })
     })
 
-    context('Service Office Component',()=>{
-        it('Service Office section', () => {
-            cy.get('.serviceofficecardCont').should('be.visible')
-        })
-    
-        it('Card Meta Details', () => {
-            cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').should('be.visible')
-        })
-    
-        it('Card Meta details have title', () => {
-            cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').find('.service-card-title').should('be.visible')
-        })
-    
-        it('Card meta details have description and text', () => {
-            cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').find('.ant-card-meta-description').find('.service-card-description.description-text').should('be.visible')
-        })
-
-        it('Navigation from Find out more button', () => {
-            cy.get('.ant-card-actions').find('a').should('have.attr', 'href')
-            .should('contains','/distribution-lists') 
-            cy.get('.ant-card-actions a').first().invoke('removeAttr', 'target').click()
-            cy.url()
-            .should('include', '/distribution-lists')
-            cy.go('back');
-        })
-
         context('Contact Footer', () => {
 
             it('Contact Footer section', () => {
@@ -191,5 +165,31 @@ describe('Services Distrubution & Analytics Page verification', () => {
             })
     
         })
-    })
+        context('Service Office Component',()=>{
+            it('Service Office section', () => {
+                cy.get('.serviceofficecardCont').should('be.visible')
+            })
+        
+            it('Card Meta Details', () => {
+                cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').should('be.visible')
+            })
+        
+            it('Card Meta details have title', () => {
+                cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').find('.service-card-title').should('be.visible')
+            })
+        
+            it('Card meta details have description and text', () => {
+                cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').find('.ant-card-meta-description').find('.service-card-description.description-text').should('be.visible')
+            })
+    
+            it('Navigation from Find out more button', () => {
+                cy.get('.ant-card-actions').find('a').should('have.attr', 'href')
+                .should('contains','/distribution-lists') 
+                cy.get('.ant-card-actions a').first().invoke('removeAttr', 'target').click()
+                cy.url()
+                .should('include', '/distribution-lists')
+                cy.go('back');
+            })
+        })
+    
 })

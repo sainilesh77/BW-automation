@@ -166,39 +166,6 @@ describe('Services Contents verification', () => {
         })
 
     })
-
-    context('Column component', () => {
-        it('Column Component section ', () => {
-            cy.get('.column.dark').scrollIntoView().should('be.visible')
-        })
-
-        it('Column Component image ', () => {
-            cy.get('.column.dark').find('.image-row').first().scrollIntoView().should('be.visible')
-        })
-
-        it('Column title ', () => {
-            cy.get('.column.dark').find('.column-title ').first().scrollIntoView().should('be.visible')
-        })
-        it('Column description ', () => {
-            cy.get('.column.dark').find('.column-desc').first().scrollIntoView().should('be.visible')
-        })
-
-        it('Learn More button', () => {
-            cy.get('.column.dark').scrollIntoView().find('a').should("have.attr", "href")
-            .should("not.be.empty")
-        })
-
-        it('Navigation from Learn More button', () => {
-            cy.get('.column.dark ').find('div a').should('have.attr', 'href')
-            .should('contains','/public-relations-services') 
-            cy.get('.column.dark > div a').first().invoke('removeAttr', 'target').click()
-            cy.url()
-            .should('include', '/public-relations-services')
-            cy.go('back');
-        })
-
-    })
-
     context('Generic Components',()=>{
         it('Bread Crumb Component', () => {
             cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
@@ -249,6 +216,36 @@ describe('Services Contents verification', () => {
         })
     
     })
-    
+    context('Column component', () => {
+        it('Column Component section ', () => {
+            cy.get('.column.dark').scrollIntoView().should('be.visible')
+        })
+
+        it('Column Component image ', () => {
+            cy.get('.column.dark').find('.image-row').first().scrollIntoView().should('be.visible')
+        })
+
+        it('Column title ', () => {
+            cy.get('.column.dark').find('.column-title ').first().scrollIntoView().should('be.visible')
+        })
+        it('Column description ', () => {
+            cy.get('.column.dark').find('.column-desc').first().scrollIntoView().should('be.visible')
+        })
+
+        it('Learn More button', () => {
+            cy.get('.column.dark').scrollIntoView().find('a').should("have.attr", "href")
+            .should("not.be.empty")
+        })
+
+        it('Navigation from Learn More button', () => {
+            cy.get('.column.dark ').find('div a').should('have.attr', 'href')
+            .should('contains','/public-relations-services') 
+            cy.get('.column.dark > div a').first().invoke('removeAttr', 'target').click()
+            cy.url()
+            .should('include', '/public-relations-services')
+            cy.go('back');
+        })
+
+    })
 
 })
