@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 6,
+  "passes": 4,
+  "pending": 0,
+  "failures": 2,
+  "start": "2023-06-21T09:00:39.299Z",
+  "duration": 4952,
+  "file": "cypress/e2e/API/bwcms-menu.cy.js"
+}

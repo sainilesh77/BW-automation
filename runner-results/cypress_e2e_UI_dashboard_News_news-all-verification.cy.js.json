@@ -1,0 +1,10 @@
+{
+  "suites": 8,
+  "tests": 16,
+  "passes": 15,
+  "pending": 0,
+  "failures": 1,
+  "start": "2023-06-21T09:00:43.078Z",
+  "duration": 179403,
+  "file": "cypress/e2e/UI/dashboard/News/news-all-verification.cy.js"
+}

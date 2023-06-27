@@ -13,12 +13,12 @@ describe('Services Contents verification', () => {
         cy 
         .visit('/')
         cy.get('.ant-menu-submenu-title > .ant-menu-title-content > span').should('be.visible').contains('Services').should('be.visible').click({force:true})
-       // cy.get('.slider-btn').should('be.visible')
+        cy.get('.slider-btn').should('be.visible')
         cy.get('#onetrust-accept-btn-handler').click()
     })
     context('Hero Slider', () => {
 
-        it('Hero Slider', () => {
+        it('Hero Slider Section', () => {
             cy.get('.hero-slider').scrollIntoView().should('be.visible')
         })
         it('Slider Carousel', () => {
@@ -47,8 +47,8 @@ describe('Services Contents verification', () => {
         
     })
 
-    context(' About Service components', () => {
-        it('About Service', () => {
+    context('About Service components', () => {
+        it('About Service Section', () => {
             cy.get('.about-services').should('be.visible')
         })
 
@@ -56,26 +56,38 @@ describe('Services Contents verification', () => {
             cy.get('.about-services').find('.about-services_content').should('be.visible')
         })
 
-        // it('Service page column component image', () => {
-        //     cy.get('.about-services').find('.image-row').should('be.visible')
-        // })
+        it('Contents heading', () => {
+            cy.get('.about-services').find('.about-services_content--heading').should('be.visible')
+        })
 
-        // it('Service page column component image', () => {
-        //     cy.get('.about-services').find('.image-row').should('be.visible')
-        // })
 
-        
+        it('Contents text', () => {
+            cy.get('.about-services').find('.about-services_content--text').should('be.visible')
+        })
+
     })
     context('Recommendation for you', () => {
-        it('Recommendation having Info', () => {
+        it('Recommendation section', () => {
             cy.get('.recommendationInfoSec').scrollIntoView().should('be.visible')
         })
 
-        it('Recommendation having recommendation news', () => {
+        it('Heading', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().find('div[role="heading"]').should('be.visible')
+        })
+
+        it('Heading Description', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().find('.recommendationInfoSec_description').should('be.visible')
+        })
+
+        it('Message Container', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().find('[data-qa="message_container"]').should('be.visible')
+        })
+        
+        it('Recommendation news', () => {
             cy.get('.recommendation').find('.recommendation_news').scrollIntoView().should('be.visible')
         })
 
-        it('News having image and navigation link', () => {
+        it('News navigation to correct link', () => {
             cy.get('.recommendation').find('.recommendation_news').each((news) => {
                 cy.wrap(news).find('.cover-image-div').should('be.visible')
                 cy.wrap(news).get('a').should('have.attr', 'href')
@@ -102,29 +114,28 @@ describe('Services Contents verification', () => {
             cy.get('.signupbannerSec_details--img').should('be.visible')
         })
 
-        
     })
 
-    context('Demo banner', () => {
-        it('Demo Banner section ', () => {
-            cy.get('.demoBannerSec').scrollIntoView().should('be.visible')
-        })
+    // context('Demo banner', () => {
+    //     it('Demo Banner section ', () => {
+    //         cy.get('.demoBannerSec').scrollIntoView().should('be.visible')
+    //     })
 
-        it('Demo banner header', () => {
-            cy.get('.demoBannerSec_details--heading').should('be.visible').contains('Ready to learn more about Business Wire?')
-        })
+    //     it('Demo banner header', () => {
+    //         cy.get('.demoBannerSec_details--heading').should('be.visible').contains('Ready to learn more about Business Wire?')
+    //     })
 
-        it('Demo banner details', () => {
-            cy.get('.demoBannerSec_details--text').should('be.visible').contains('See why Business Wire is the best news distribution solution for your needs.')
-        })
+    //     it('Demo banner details', () => {
+    //         cy.get('.demoBannerSec_details--text').should('be.visible').contains('See why Business Wire is the best news distribution solution for your needs.')
+    //     })
 
-        it('Request Demo Button', () => {
-            cy.get('.demoBannerSec').find('a > span').should('be.visible').contains('Request a Demo')
-        })
-    })
+    //     it('Request Demo Button', () => {
+    //         cy.get('.demoBannerSec').find('a > span').should('be.visible').contains('Request a Demo')
+    //     })
+    // })
 
     context('Contact US banner', () => {
-        it('Contact Banner', () => {
+        it('Contact Banner Section', () => {
             cy.get('.contact-banner').scrollIntoView().should('be.visible')
         })
 
@@ -143,6 +154,15 @@ describe('Services Contents verification', () => {
         it('Get started button', () => {
             cy.get('.contact-banner').scrollIntoView().find('a').should("have.attr", "href")
             .should("not.be.empty")
+        })
+
+        it('Navigation from Get started button', () => {
+                cy.get('.contact-banner').find('a').should('have.attr', 'href')
+                .should('contains','/contact-us') 
+                cy.get('.contact-banner a').invoke('removeAttr', 'target').click()
+                cy.url()
+                .should('include', '/contact-us')
+                cy.go('back');
         })
 
     })
@@ -167,27 +187,68 @@ describe('Services Contents verification', () => {
             cy.get('.column.dark').scrollIntoView().find('a').should("have.attr", "href")
             .should("not.be.empty")
         })
+
+        it('Navigation from Learn More button', () => {
+            cy.get('.column.dark ').find('div a').should('have.attr', 'href')
+            .should('contains','/public-relations-services') 
+            cy.get('.column.dark > div a').first().invoke('removeAttr', 'target').click()
+            cy.url()
+            .should('include', '/public-relations-services')
+            cy.go('back');
+        })
+
     })
 
-    it('Bread Crumb Component visible', () => {
-        cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
-    })
-
-    it('Service Page Title', () => {
-        cy.title().should('eq', 'Services | Business Wire')
-    })
-
-    it('Reommendation details visible', () => {
-        cy.get('.cover-image-div').should('be.visible')
-    })
-
-    it('Contact Header visible', () => {
-        cy.get('.contact-banner-text1').should('be.visible').contains('Contact Us')
-    })
-
-    it('Contact Description visible', () => {
-        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire representative for product, service, and pricing information. Set up an account and share your news.')
-    })
-
+    context('Generic Components',()=>{
+        it('Bread Crumb Component', () => {
+            cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
+        })
     
+        it('Bread Crumb link', () => {
+            cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-link').should('be.visible')
+        })
+
+        it('Bread Crumb Seperator', () => {
+            cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-separator').should('be.visible')
+        })
+
+        it('Service Page Title', () => {
+            cy.title().should('eq', 'Services | Business Wire')
+        })
+
+    })
+
+    context('Contact Footer', () => {
+
+        it('Contact Footer section', () => {
+            cy.get('.footer').scrollIntoView().should('be.visible')
+        })
+        
+        it('Footer Gutter Space', () => {
+            cy.get('.footer').scrollIntoView().find('.footer-gutter-space').should('be.visible')
+        })
+    
+        it('Next Footer container', () => {
+            cy.get('.next-footer-container').scrollIntoView().should('be.visible')
+        })
+    
+    })
+    
+    context('Copyright', () => {
+    
+        it('Copyright section', () => {
+            cy.get('.copyright').scrollIntoView().should('be.visible')
+        })
+    
+        it('Copyright contents', () => {
+            cy.get('.copyright-content').scrollIntoView().should('be.visible')
+        })
+    
+        it('Copyright contents should have copyright links', () => {
+            cy.get('.copyright-content').scrollIntoView().find('a[rel="noreferrer"]').should('be.visible')
+        })
+    
+    })
+    
+
 })

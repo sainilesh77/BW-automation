@@ -1,7 +1,6 @@
-import APIConstants from "../../../support/constants/APIConstants";
 let resolutionData,resolution,browserResolution;
 
-describe('Terms and conditions verification', () => {
+describe('Privacy Policy verification', () => {
     before(() => {
         resolution=Cypress.env('browserResolution')
         cy.fixture(resolution).then((contactComponent) => {
@@ -12,10 +11,8 @@ describe('Terms and conditions verification', () => {
         cy 
         .visit('/')
     })
-    it('Terms Use visual verification', () => {
-        cy.get('a').contains('Terms of Use').scrollIntoView().should('be.visible').click();
-        cy.compareSnapshot('terms-use-page');
+    it('Privacy Policy visual verification', () => {
+        cy.get('a').contains('Privacy Policy').scrollIntoView().should('be.visible').click();
+        cy.compareSnapshot('privacy-policy-page',1);
     });
 })
-
-

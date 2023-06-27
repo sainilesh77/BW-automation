@@ -1,7 +1,6 @@
-import APIConstants from "../../../support/constants/APIConstants";
 let resolutionData,resolution,browserResolution;
 
-describe('about us verification', () => {
+describe('Terms and conditions verification', () => {
     before(() => {
         resolution=Cypress.env('browserResolution')
         cy.fixture(resolution).then((contactComponent) => {
@@ -12,9 +11,10 @@ describe('about us verification', () => {
         cy 
         .visit('/')
     })
-    it('About Us visual verification', () => {
-        cy.get('a').contains('About Us').scrollIntoView().should('be.visible').click();
-        cy.compareSnapshot('about-us-page',1);
+    it('Terms Use visual verification', () => {
+        cy.get('a').contains('Terms of Use').scrollIntoView().should('be.visible').click();
+        cy.compareSnapshot('terms-use-page');
     });
-
 })
+
+

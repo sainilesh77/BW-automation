@@ -1,7 +1,6 @@
-import APIConstants from "../../../support/constants/APIConstants";
 let resolutionData,resolution,browserResolution;
 
-describe('Careers verification', () => {
+describe('Careers component visual verification', () => {
     before(() => {
         resolution=Cypress.env('browserResolution')
         cy.fixture(resolution).then((contactComponent) => {

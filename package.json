@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "allure-commandline": "^2.22.0",
+    "cypress-parallel": "^0.13.0",
     "cypress-xpath": "^2.0.1",
     "fs-extra": "^11.1.1",
     "mocha-allure-reporter": "^1.4.0"

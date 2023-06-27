@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 19,
+  "passes": 16,
+  "pending": 0,
+  "failures": 3,
+  "start": "2023-06-21T09:03:49.946Z",
+  "duration": 61607,
+  "file": "cypress/e2e/UI/dashboard/Services/services-distribution-analysis.cy.js"
+}

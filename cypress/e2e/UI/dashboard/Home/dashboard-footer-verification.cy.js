@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
-import APIConstants from "../../../support/constants/APIConstants";
-import dashboardPage from "../../../support/page-objects/DashboardPage";
+import APIConstants from "../../../../support/constants/APIConstants";
+import dashboardPage from "../../../../support/page-objects/DashboardPage";
 let footerResponse, headerDetails, footerJson;
-describe('BW-CMS Footer Verification test suite', () => {
+describe('Main footer test suite', () => {
     headerDetails=new Map();
     beforeEach(() => {
         cy.viewport(1920,1080)

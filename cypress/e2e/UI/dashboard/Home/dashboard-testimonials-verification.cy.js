@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
-import APIConstants from "../../../support/constants/APIConstants";
-import dashboardPage from "../../../support/page-objects/DashboardPage";
+import APIConstants from "../../../../support/constants/APIConstants";
+import dashboardPage from "../../../../support/page-objects/DashboardPage";
 let testimonialResponse, headerDetails, testimonialJson;
-describe('BW-CMS Testimonial Verification test suite', () => {
+describe('Testimonials verification', () => {
     headerDetails=new Map();
     beforeEach(() => {
         cy.viewport(1920,1080)
@@ -25,7 +25,7 @@ describe('BW-CMS Testimonial Verification test suite', () => {
             });
     });
 
-    it('Verify testimonial contents', function () {
+    it('testimonial contents', function () {
         dashboardPage.verifyTestiMonialsCarousel(testimonialResponse);
     });
 

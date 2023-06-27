@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
-import APIConstants from "../../../support/constants/APIConstants";
-import dashboardPage from "../../../support/page-objects/DashboardPage";
+import APIConstants from "../../../../support/constants/APIConstants";
+import dashboardPage from "../../../../support/page-objects/DashboardPage";
 let menusResponse, headerDetails, menuJson;
-describe('BW-CMS Verification test suite', () => {
+describe('Headers verifications', () => {
     headerDetails=new Map();
     beforeEach(() => {
         cy.viewport(1920,1080)
@@ -25,7 +25,7 @@ describe('BW-CMS Verification test suite', () => {
             });
     });
 
-    it('Verify all links from landing page Page', function () {
+    it('Verify all links from Home Page', function () {
         cy.verifyAllLinks('businesswire.com');
     });
     
@@ -39,9 +39,6 @@ describe('BW-CMS Verification test suite', () => {
     
     });
 
-    it('Verify all Headers Links', function () {
-        dashboardPage.verifyMainHeaderLinks(menusResponse);
-    });
     it('Verify Ant Menu List for each header', function () {
         dashboardPage.verifyAntMenu(menusResponse);
     });

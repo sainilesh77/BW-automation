@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 24,
+  "passes": 19,
+  "pending": 0,
+  "failures": 5,
+  "start": "2023-06-21T09:00:45.931Z",
+  "duration": 118595,
+  "file": "cypress/e2e/UI/dashboard/Services/services-public-relations.cy.js"
+}

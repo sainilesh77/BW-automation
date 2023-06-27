@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
-import APIConstants from "../../../support/constants/APIConstants";
-import dashboardPage from "../../../support/page-objects/DashboardPage";
+import APIConstants from "../../../../support/constants/APIConstants";
+import dashboardPage from "../../../../support/page-objects/DashboardPage";
 let contactResponse, headerDetails, contactJson;
-describe('BW-CMS Contact US Verification test suite', () => {
+describe('Contact us component Verification', () => {
     headerDetails=new Map();
     beforeEach(() => {
         cy.viewport(1920,1080)

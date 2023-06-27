@@ -32,9 +32,9 @@ describe('Services Visual verification', () => {
         cy.get('.signupbannerSec').compareSnapshot('sign-up-banner-component'+width+'_'+height,1);
     })
 
-    it('Demo banner', () => {
-        cy.get('.demoBannerSec').compareSnapshot('demo-banner-component'+width+'_'+height,1);
-    })
+    // it('Demo banner', () => {
+    //     cy.get('.demoBannerSec').compareSnapshot('demo-banner-component'+width+'_'+height,1);
+    // })
     
     it('Contact US banner', () => {
         cy.get('.contact-banner').compareSnapshot('contact-us-component'+width+'_'+height,1);

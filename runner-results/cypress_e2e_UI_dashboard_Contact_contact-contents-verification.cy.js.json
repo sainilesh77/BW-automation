@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 6,
+  "passes": 6,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-06-21T08:59:41.643Z",
+  "duration": 21593,
+  "file": "cypress/e2e/UI/dashboard/Contact/contact-contents-verification.cy.js"
+}

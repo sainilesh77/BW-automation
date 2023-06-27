@@ -1,0 +1,6 @@
+{
+    "baseUrl":"https://alpha.businesswire.com/",
+    "env":{
+    "apiBaseUrl":"https://platform.businesswire.com/"
+    }
+  }

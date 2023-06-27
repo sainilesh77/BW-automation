@@ -18,114 +18,178 @@ describe('Services Distrubution & Analytics Page verification', () => {
         cy.get('#onetrust-accept-btn-handler').click()
     })
 
-    it('Services Slider', () => {
-        cy.get('.slider-div').scrollIntoView().should('be.visible')
+    context('Hero Slider', () => {
+
+        it('Hero Slider Section', () => {
+            cy.get('.hero-slider').scrollIntoView().should('be.visible')
+        })
+        it('Slider Carousel', () => {
+            cy.get('.hero-slider .ant-carousel').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider have slick slider', () => {
+            cy.get('.hero-slider').find('.slick-slider').scrollIntoView().should('be.visible')
+        })
+
+        it('Slick Slider having slick list', () => {
+            cy.get('.hero-slider .ant-carousel').find('.slick-slider .slick-list').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider Content', () => {
+            cy.get('.css-zyge7o.slider-content').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider Content have title', () => {
+            cy.get('.css-zyge7o.slider-content').find('.slider-title').scrollIntoView().should('be.visible')
+        })
+
+        it('Slider Content have description', () => {
+            cy.get('.css-zyge7o.slider-content').find('.slider-desc').scrollIntoView().should('be.visible')
+        })
+        
     })
 
-    it('Service Office Card', function () {
-        cy.get('.serviceofficecard').should('be.visible')
-    });
+    context('Recommendation for you', () => {
+        it('Recommendation section', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().should('be.visible')
+        })
 
-    it('Service Card Description', () => {
-        cy.get('.service-card-description.description-text ').should('be.visible')
-    })
+        it('Heading', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().find('div[role="heading"]').should('be.visible')
+        })
 
-    it('Recommendation Info Section', () => {
-        cy.get('.recommendationInfoSec').scrollIntoView().should('be.visible')
-    })
+        it('Heading Description', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().find('.recommendationInfoSec_description').should('be.visible')
+        })
 
-    it('Recommendation Info Heading', () => {
-        cy.get('.recommendationInfoSec').find('.recommendationInfoSec_heading').scrollIntoView().should('be.visible')
-    })
+        it('Message Container', () => {
+            cy.get('.recommendationInfoSec').scrollIntoView().find('[data-qa="message_container"]').should('be.visible')
+        })
+        
+        it('Recommendation news', () => {
+            cy.get('.recommendation').find('.recommendation_news').scrollIntoView().should('be.visible')
+        })
 
-    it('Recommendation Info Description', () => {
-        cy.get('.recommendationInfoSec').find('.recommendationInfoSec_description').scrollIntoView().should('be.visible')
-    })
-
-    it('Sign-Up Banner', () => {
-        cy.get('.signupbannerSec').scrollIntoView().should('be.visible')
-    })
-
-    it('Contact-US Banner', () => {
-        cy.get('.contact-banner').scrollIntoView().should('be.visible')
-    })
-
-    it('Column Component', () => {
-        cy.get('.column.dark').scrollIntoView().should('be.visible')
-    })
-
-    it('Verify all links from Distribution & Analytics Page', function () {
-        cy.verifyAllLinks('businesswire.wpengine.com');
-        cy.get('a').each(link => {
-          if (link.prop('href'))
-            cy.request({
-              url: link.prop('href'),
-              failOnStatusCode: false
-            })
-          cy.log( link.prop('href'))
-        })
-    });
-
-    it('Bread Crumb Component', () => {
-        cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
-    })
-
-    it('Service Card Page Details', () => {
-        cy.get('.serviceofficecard').should('be.visible')
-    })
-
-    it('Service Card Title', () => {
-        cy.get('.serviceofficecard').find('.ant-card-body').should('be.visible').each((ele)=>{
-            cy.wrap(ele).find('.service-card-title').should('be.visible')
+        it('News navigation to correct link', () => {
+            cy.get('.recommendation').find('.recommendation_news').each((news) => {
+                cy.wrap(news).find('.cover-image-div').should('be.visible')
+                cy.wrap(news).get('a').should('have.attr', 'href')
+                .should('contains','/news') 
+            })
         })
     })
-    it('Service Card Description', () => {
-        cy.get('.serviceofficecard').find('.ant-card-body').should('be.visible').each((ele)=>{
-            cy.wrap(ele).find('.service-card-title').should('be.visible')
-            cy.wrap(ele).find('.service-card-description').should('be.visible')
-            cy.wrap(ele).find('a > .service-card-button').should('be.visible')
+
+    context('Column component', () => {
+        it('Column Component section ', () => {
+            cy.get('.column.dark').scrollIntoView().should('be.visible')
+        })
+
+        it('Column Component image ', () => {
+            cy.get('.column.dark').find('.image-row').first().scrollIntoView().should('be.visible')
+        })
+
+        it('Column title ', () => {
+            cy.get('.column.dark').find('.column-title ').first().scrollIntoView().should('be.visible')
+        })
+        it('Column description ', () => {
+            cy.get('.column.dark').find('.column-desc').first().scrollIntoView().should('be.visible')
+        })
+
+    })
+
+    context('Leadgen Banner',()=>{
+        it('Leadgen Banner section', () => {
+            cy.get('.leadgenbannerSec').should('be.visible')
+        })
+
+        it('Leadgen Banner having details dection', () => {
+            cy.get('.leadgenbannerSec').find('.leadgenbannerSec_details').should('be.visible')
+        })
+
+        it('Leadgen Banner having mock image', () => {
+            cy.get('.leadgenbannerSec_details').find('div > div > .leadgenbanner-macBookProMockupimg').should('be.visible')
+        })
+
+        it('Leadgen Banner having fill form', () => {
+            cy.get('.leadgenbannerSec_details > div> div[align="start"]').should('be.visible')
+        })
+    })
+
+    context('Service Office Component',()=>{
+        it('Service Office section', () => {
+            cy.get('.serviceofficecardCont').should('be.visible')
+        })
+    
+        it('Card Meta Details', () => {
+            cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').should('be.visible')
+        })
+    
+        it('Card Meta details have title', () => {
+            cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').find('.service-card-title').should('be.visible')
+        })
+    
+        it('Card meta details have description and text', () => {
+            cy.get('.serviceofficecardCont').find('.ant-card-meta-detail').find('.ant-card-meta-description').find('.service-card-description.description-text').should('be.visible')
+        })
+
+        it('Navigation from Find out more button', () => {
+            cy.get('.ant-card-actions').find('a').should('have.attr', 'href')
+            .should('contains','/distribution-lists') 
+            cy.get('.ant-card-actions a').first().invoke('removeAttr', 'target').click()
+            cy.url()
+            .should('include', '/distribution-lists')
+            cy.go('back');
+        })
+
+        context('Contact Footer', () => {
+
+            it('Contact Footer section', () => {
+                cy.get('.footer').scrollIntoView().should('be.visible')
+            })
             
+            it('Footer Gutter Space', () => {
+                cy.get('.footer').scrollIntoView().find('.footer-gutter-space').should('be.visible')
+            })
+        
+            it('Next Footer container', () => {
+                cy.get('.next-footer-container').scrollIntoView().should('be.visible')
+            })
+        
+        })
+        
+        context('Copyright', () => {
+        
+            it('Copyright section', () => {
+                cy.get('.copyright').scrollIntoView().should('be.visible')
+            })
+        
+            it('Copyright contents', () => {
+                cy.get('.copyright-content').scrollIntoView().should('be.visible')
+            })
+        
+            it('Copyright contents should have copyright links', () => {
+                cy.get('.copyright-content').scrollIntoView().find('a[rel="noreferrer"]').should('be.visible')
+            })
+        
+        })
+
+        context('Generic Components',()=>{
+            it('Bread Crumb Component', () => {
+                cy.get('.breadcrumbSec').scrollIntoView().should('be.visible')
+            })
+        
+            it('Bread Crumb link', () => {
+                cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-link').should('be.visible')
+            })
+    
+            it('Bread Crumb Seperator', () => {
+                cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-separator').should('be.visible')
+            })
+    
+            it('Service Page Title', () => {
+                cy.title().should('eq', 'distribution-analytics | Business Wire')
+            })
+    
         })
     })
-
-    it('Service Card Having Find Out More Button', () => {
-        cy.get('.serviceofficecard').find('.ant-card-body').should('be.visible').each((ele)=>{
-            cy.wrap(ele).find('a > .service-card-button').should('be.visible')
-        })
-    })
-
-
-    it('Contact Header', () => {
-        cy.get('.contact-banner-text1').should('be.visible').contains('Contact Us')
-    })
-
-    it('Contact Description', () => {
-        cy.get('.contact-banner-text2').should('be.visible').contains('Speak with a Business Wire representative for product, service, and pricing information. Set up an account and share your news.')
-    })
-
-    it('Sign-up banner header', () => {
-        cy.get('.signupbannerSec_details--heading').should('be.visible').contains('Get started with Business Wire')
-    })
-
-    it('Sign-up details', () => {
-        cy.get('.signupbannerSec_details--text').should('be.visible').contains('Our deep experience, one-on-one guidance, and superior media targeting help you gain results. Register now and share your news.')
-    
-    })
-
-    // it('Leadgen Banner', () => {
-    //     cy.get('.leadgenbannerSec').should('be.visible')
-    // })
-
-    // it('Leadgen Banner having details dection', () => {
-    //     cy.get('.leadgenbannerSec').find('.leadgenbannerSec_details').should('be.visible')
-    // })
-
-    // it('Leadgen Banner having mock image', () => {
-    //     cy.get('.leadgenbannerSec_details').find('div > div > .leadgenbanner-macBookProMockupimg').should('be.visible')
-    // })
-
-    // it('Leadgen Banner having fill form', () => {
-    //     cy.get('.leadgenbannerSec_details > div> div[align="start"]').should('be.visible')
-    // })
-    
 })

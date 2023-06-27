@@ -18,7 +18,7 @@ it('Get Main Header with valid data', () => {
     });
 });
 
-it('Get Main Header with invalid parameter', async () => {
+it('Get Main Header with invalid parameter', () => {
     allure.epic('Get Main Header with invalid parameter');
     cy.request({
         method:  'GET',
@@ -26,7 +26,7 @@ it('Get Main Header with invalid parameter', async () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?"+await APIHelpers.getRandomString(10)+"="+APIConstants.MENUS.MAIN_HEADER,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?"+APIHelpers.getRandomString(10)+"="+APIConstants.MENUS.MAIN_HEADER,
     }).then((response) => { 
         cy.log('GET /menu with invalid paramters'+ JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.BAD_REQUEST);
@@ -34,7 +34,7 @@ it('Get Main Header with invalid parameter', async () => {
     });
 });
 
-it('Get Main Header with parameter having invalid value', async () => {
+it('Get Main Header with parameter having invalid value', () => {
     allure.epic('Get Main Header with parameter having invalid value');
     cy.request({
         method:  'GET',
@@ -42,7 +42,7 @@ it('Get Main Header with parameter having invalid value', async () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+await APIHelpers.getRandomString(10),
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIHelpers.getRandomString(10),
     }).then((response) => { 
         cy.log(JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.NOT_FOUND);
@@ -64,7 +64,7 @@ it('Get Main Footer with valid values', () => {
     });
 });
 
-it('Get Footer Blog and Language with valid parameter and value', async () => {
+it('Get Footer Blog and Language with valid parameter and value', () => {
     allure.epic('Get Footer Blog and Language with valid parameter and value');
     cy.request({
         method:  'GET',
@@ -78,15 +78,15 @@ it('Get Footer Blog and Language with valid parameter and value', async () => {
     });
 });
 
-it('Get Footer bottom with valid parameter and value', async () => {
+it('Get Footer bottom with valid parameter and value', () => {
     allure.epic('Get Footer bottom with valid parameter and value');
     cy.request({
         method:  'GET',
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+await APIConstants.MENUS.FOOTER_BOTTOM,
-    }).then(async (response) => { 
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/menu?name="+APIConstants.MENUS.FOOTER_BOTTOM,
+    }).then((response) => { 
         cy.log(JSON.stringify(response.body))
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
     });

@@ -18,9 +18,11 @@ describe('News Details Visual verification', () => {
         cy.get('#onetrust-accept-btn-handler').click()
     })
     context('News Details', () => {
+
     it('All News title verification', () => {
-        cy.get('.contentSec--heading').scrollIntoView().compareSnapshot('all-news-section'+width+'_'+height,1);
+        cy.get('.allNewsSec').scrollIntoView().compareSnapshot('all-news-section'+width+'_'+height,1);
     });
+
     it('Right banner section verification', () => {
         cy.get('.rightBannerSec').scrollIntoView().compareSnapshot('right-banner-section'+width+'_'+height,1);
     });
@@ -46,5 +48,13 @@ describe('News Details Visual verification', () => {
         cy.compareSnapshot('signup-form-section'+width+'_'+height,1);
         cy.go('back');
     })
+
+    it('Footer', () => {
+        cy.get('.footer').scrollIntoView().compareSnapshot('footer-section'+width+'_'+height,1);
+    });
+
+    it('Copyright', () => {
+        cy.get('.copyright').scrollIntoView().compareSnapshot('copyright-section'+width+'_'+height,1);
+    });
 })
 })

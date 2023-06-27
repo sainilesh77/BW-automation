@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 9,
+  "passes": 8,
+  "pending": 0,
+  "failures": 1,
+  "start": "2023-06-21T09:02:54.230Z",
+  "duration": 79140,
+  "file": "cypress/e2e/Visual/bw-cms-main-page-visual-verifications.cy.js"
+}

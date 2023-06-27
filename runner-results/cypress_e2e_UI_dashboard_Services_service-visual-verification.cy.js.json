@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 9,
+  "passes": 8,
+  "pending": 0,
+  "failures": 1,
+  "start": "2023-06-21T09:04:03.657Z",
+  "duration": 39840,
+  "file": "cypress/e2e/UI/dashboard/Services/service-visual-verification.cy.js"
+}

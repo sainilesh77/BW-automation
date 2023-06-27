@@ -30,17 +30,7 @@
           {
             "id": 52,
             "title": "Automotive News",
-            "url": "/",
-            "description": "",
-            "target": "",
-            "active": true,
-            "language": "",
-            "children": []
-          },
-          {
-            "id": 53,
-            "title": "College & University Pressroom News",
-            "url": "/",
+            "url": "/news/industry/1000032",
             "description": "",
             "target": "",
             "active": true,
@@ -50,7 +40,7 @@
           {
             "id": 54,
             "title": "Communication News",
-            "url": "/",
+            "url": "/news/industry/1000048",
             "description": "",
             "target": "",
             "active": true,
@@ -60,7 +50,7 @@
           {
             "id": 55,
             "title": "Construction & Property News",
-            "url": "/",
+            "url": "/news/industry/1000049",
             "description": "",
             "target": "",
             "active": true,
@@ -70,17 +60,7 @@
           {
             "id": 56,
             "title": "Consumer News",
-            "url": "/",
-            "description": "",
-            "target": "",
-            "active": true,
-            "language": "",
-            "children": []
-          },
-          {
-            "id": 57,
-            "title": "Corporate Social Responsibility News",
-            "url": "/",
+            "url": "/news/industry/1000051",
             "description": "",
             "target": "",
             "active": true,
@@ -90,7 +70,7 @@
           {
             "id": 58,
             "title": "Defense News",
-            "url": "/",
+            "url": "/news/industry/1000057",
             "description": "",
             "target": "",
             "active": true,
@@ -100,7 +80,7 @@
           {
             "id": 59,
             "title": "Education News",
-            "url": "/",
+            "url": "/news/industry/1000060",
             "description": "",
             "target": "",
             "active": true,
@@ -108,8 +88,8 @@
             "children": []
           },
           {
-            "id": "18",
-            "title": "View All",
+            "id": 3305,
+            "title": "View All Industries",
             "url": "/news/industry",
             "description": "",
             "target": "",
@@ -131,7 +111,7 @@
           {
             "id": 60,
             "title": "Advisory/Reminder News",
-            "url": "/",
+            "url": "/news/subject/1000000",
             "description": "",
             "target": "",
             "active": true,
@@ -141,7 +121,7 @@
           {
             "id": 61,
             "title": "Annual Meeting News",
-            "url": "/",
+            "url": "/news/subject/1778691",
             "description": "",
             "target": "",
             "active": true,
@@ -151,7 +131,7 @@
           {
             "id": 62,
             "title": "Award News",
-            "url": "/",
+            "url": "/news/subject/1050029",
             "description": "",
             "target": "",
             "active": true,
@@ -161,7 +141,7 @@
           {
             "id": 63,
             "title": "Bankruptcy News",
-            "url": "/",
+            "url": "/news/subject/1000001",
             "description": "",
             "target": "",
             "active": true,
@@ -171,7 +151,7 @@
           {
             "id": 64,
             "title": "Bond Issue News",
-            "url": "/",
+            "url": "/news/subject/1050030",
             "description": "",
             "target": "",
             "active": true,
@@ -181,7 +161,7 @@
           {
             "id": 65,
             "title": "Bond/Stock Rating News",
-            "url": "/",
+            "url": "/news/subject/1000002",
             "description": "",
             "target": "",
             "active": true,
@@ -191,7 +171,7 @@
           {
             "id": 66,
             "title": "Business Update News",
-            "url": "/",
+            "url": "/news/subject/1778692",
             "description": "",
             "target": "",
             "active": true,
@@ -201,7 +181,7 @@
           {
             "id": 67,
             "title": "Closed End Fund News",
-            "url": "/",
+            "url": "/news/subject/1050031",
             "description": "",
             "target": "",
             "active": true,
@@ -232,7 +212,7 @@
           {
             "id": 68,
             "title": "Español",
-            "url": "/",
+            "url": "/news/language/es",
             "description": "",
             "target": "",
             "active": true,
@@ -242,7 +222,7 @@
           {
             "id": 728,
             "title": "Português",
-            "url": "/",
+            "url": "/news/language/pt",
             "description": "",
             "target": "",
             "active": true,
@@ -252,7 +232,7 @@
           {
             "id": 729,
             "title": "Deutsch",
-            "url": "/",
+            "url": "/news/language/de",
             "description": "",
             "target": "",
             "active": true,
@@ -262,7 +242,7 @@
           {
             "id": 730,
             "title": "Français",
-            "url": "/",
+            "url": "/news/language/fr",
             "description": "",
             "target": "",
             "active": true,
@@ -272,7 +252,7 @@
           {
             "id": 731,
             "title": "Italiano",
-            "url": "/",
+            "url": "/news/language/it",
             "description": "",
             "target": "",
             "active": true,
@@ -282,7 +262,7 @@
           {
             "id": 732,
             "title": "Nederlands",
-            "url": "/",
+            "url": "/news/language/nl",
             "description": "",
             "target": "",
             "active": true,
@@ -292,7 +272,7 @@
           {
             "id": 733,
             "title": "Dansk",
-            "url": "/",
+            "url": "/news/language/da",
             "description": "",
             "target": "",
             "active": true,
@@ -302,7 +282,7 @@
           {
             "id": 734,
             "title": "Norsk",
-            "url": "/",
+            "url": "/news/language/no",
             "description": "",
             "target": "",
             "active": true,
@@ -364,7 +344,7 @@
           {
             "id": 185,
             "title": "Press Release Distribution",
-            "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
+            "url": "/services/public-relations/press-release-distribution",
             "description": "",
             "target": "",
             "active": true,

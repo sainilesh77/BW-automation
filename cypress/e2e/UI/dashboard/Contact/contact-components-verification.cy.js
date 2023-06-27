@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import contactPage from "../../../../../support/page-objects/ContactPage"
+import contactPage from "../../../../support/page-objects/ContactPage"
 let resolutionData,resolution,browserResolution;
 describe('Contact US Components Verification test suite', () => {
     before(() => {

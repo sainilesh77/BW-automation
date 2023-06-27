@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 23,
+  "passes": 20,
+  "pending": 0,
+  "failures": 3,
+  "start": "2023-06-21T09:04:00.497Z",
+  "duration": 59787,
+  "file": "cypress/e2e/UI/dashboard/Services/services-media-journalist.cy.js"
+}
