@@ -335,7 +335,7 @@
       {
         "id": 21,
         "title": "Public Relations",
-        "url": "/services/public-relations",
+        "url": "/services/public-relations-services",
         "description": "",
         "target": "",
         "active": true,
@@ -416,7 +416,7 @@
       {
         "id": 22,
         "title": "Investor Relations",
-        "url": "/services/investor-relations",
+        "url": "/services/investor-relations-services",
         "description": "",
         "target": "",
         "active": true,
@@ -505,7 +505,7 @@
           {
             "id": "22",
             "title": "View All",
-            "url": "/services/investor-relations",
+            "url": "/services/investor-relations-services",
             "description": "",
             "target": "",
             "active": true,

@@ -20,7 +20,7 @@ describe('Services Visual verification', () => {
         cy.compareSnapshot('Services-Home-Page'+width+'_'+height,1);
     })
     it('Slider components', () => {
-        cy.get('.css-zyge7o.slider-content').compareSnapshot('Slider-component'+width+'_'+height,1);
+        cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').compareSnapshot('Slider-component'+width+'_'+height,1);
     })
     it('Service contents ', () => {
         cy.get('.about-services_content').compareSnapshot('Service-contents-component'+width+'_'+height,1);

@@ -23,6 +23,7 @@ describe('Media and Journalist verification', () => {
         it('Hero Slider Section', () => {
             cy.get('.hero-slider').scrollIntoView().should('be.visible')
         })
+        
         it('Slider Carousel', () => {
             cy.get('.hero-slider .ant-carousel').scrollIntoView().should('be.visible')
         })
@@ -36,15 +37,15 @@ describe('Media and Journalist verification', () => {
         })
 
         it('Slider Content', () => {
-            cy.get('.css-zyge7o.slider-content').scrollIntoView().should('be.visible')
+            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').scrollIntoView().should('be.visible')
         })
 
         it('Slider Content have title', () => {
-            cy.get('.css-zyge7o.slider-content').find('.slider-title').scrollIntoView().should('be.visible')
+            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').find('.ant-col.ant-col-24.slider-title.css-dev-only-do-not-override-zyge7o').scrollIntoView().should('be.visible')
         })
 
         it('Slider Content have description', () => {
-            cy.get('.css-zyge7o.slider-content').find('.slider-desc').scrollIntoView().should('be.visible')
+            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').find('.ant-col.ant-col-24.slider-desc.css-dev-only-do-not-override-zyge7o').scrollIntoView().should('be.visible')
         })
         
     })
@@ -161,7 +162,7 @@ describe('Media and Journalist verification', () => {
             })
     
             it('Service Page Title', () => {
-                cy.title().should('eq', 'media-journalist-tools | Business Wire')
+                cy.title().should('eq', 'Media & Journalist tool | Business Wire')
             })
     })
     context('Service Office Component',()=>{

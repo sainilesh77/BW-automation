@@ -13,9 +13,8 @@ describe('News All verification', () => {
         cy 
         .visit('/')
         cy.get('.ant-menu-title-content > span > a').should('be.visible').contains('News').should('be.visible').click()
-        cy.get('.loader').should('be.visible')
         cy.get('.loader').should('not.exist')
-        cy.get('#onetrust-accept-btn-handler').click()
+        cy.get('ul[id*="1-12-popup"] > div > div:nth-child(1) > a').should('be.visible').click();
     })
 
     context('News Heading', () => {

@@ -1,8 +1,0 @@
-"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","","","0","0","25","0","0"
-"Get Main Header with parameter having invalid value","BW-CMS GET /Menu endpoint verification test suite","","0","0","1","0","0"
-"Get Main Header with valid data","BW-CMS GET /Menu endpoint verification test suite","","0","0","1","0","0"
-"Get Footer bottom with valid parameter and value","BW-CMS GET /Menu endpoint verification test suite","","0","0","1","0","0"
-"Get Main Header with invalid parameter","BW-CMS GET /Menu endpoint verification test suite","","0","0","1","0","0"
-"Get Main Footer with valid values","BW-CMS GET /Menu endpoint verification test suite","","0","0","1","0","0"
-"Get Footer Blog and Language with valid parameter and value","BW-CMS GET /Menu endpoint verification test suite","","0","0","1","0","0"
