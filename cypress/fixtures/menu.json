@@ -2,7 +2,7 @@
   {
     "id": 12,
     "title": "News",
-    "url": "/news",
+    "url": "#",
     "description": "The industry’s only patented and global propriety news content distribution.",
     "target": "",
     "active": true,
@@ -12,7 +12,7 @@
         "id": 735,
         "title": "All News",
         "url": "/news",
-        "description": "The industry’s only patented and global propriety news content distribution",
+        "description": "Today’s press releases, multimedia, and other news from hundreds of companies around the world.",
         "target": "",
         "active": true,
         "language": "",
@@ -28,9 +28,19 @@
         "language": "",
         "children": [
           {
+            "id": 6402,
+            "title": "Overview",
+            "url": "/news/industry",
+            "description": "",
+            "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
+          {
             "id": 52,
             "title": "Automotive News",
-            "url": "/news/industry/1000032",
+            "url": "/news/industry/automotive",
             "description": "",
             "target": "",
             "active": true,
@@ -40,7 +50,7 @@
           {
             "id": 54,
             "title": "Communication News",
-            "url": "/news/industry/1000048",
+            "url": "/news/industry/communications",
             "description": "",
             "target": "",
             "active": true,
@@ -50,7 +60,7 @@
           {
             "id": 55,
             "title": "Construction & Property News",
-            "url": "/news/industry/1000049",
+            "url": "/news/industry/construction-property",
             "description": "",
             "target": "",
             "active": true,
@@ -60,7 +70,7 @@
           {
             "id": 56,
             "title": "Consumer News",
-            "url": "/news/industry/1000051",
+            "url": "/news/industry/consumer",
             "description": "",
             "target": "",
             "active": true,
@@ -70,7 +80,7 @@
           {
             "id": 58,
             "title": "Defense News",
-            "url": "/news/industry/1000057",
+            "url": "/news/industry/defense",
             "description": "",
             "target": "",
             "active": true,
@@ -80,7 +90,7 @@
           {
             "id": 59,
             "title": "Education News",
-            "url": "/news/industry/1000060",
+            "url": "/news/industry/education",
             "description": "",
             "target": "",
             "active": true,
@@ -88,8 +98,18 @@
             "children": []
           },
           {
-            "id": 3305,
-            "title": "View All Industries",
+            "id": 5532,
+            "title": "Energy News",
+            "url": "/news/industry/energy",
+            "description": "",
+            "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
+          {
+            "id": "18",
+            "title": "View All",
             "url": "/news/industry",
             "description": "",
             "target": "",
@@ -109,9 +129,19 @@
         "language": "",
         "children": [
           {
+            "id": 6403,
+            "title": "Overview",
+            "url": "/news/subject",
+            "description": "",
+            "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
+          {
             "id": 60,
             "title": "Advisory/Reminder News",
-            "url": "/news/subject/1000000",
+            "url": "/news/subject/advisory-reminder",
             "description": "",
             "target": "",
             "active": true,
@@ -121,7 +151,7 @@
           {
             "id": 61,
             "title": "Annual Meeting News",
-            "url": "/news/subject/1778691",
+            "url": "/news/subject/annual-meeting",
             "description": "",
             "target": "",
             "active": true,
@@ -131,7 +161,7 @@
           {
             "id": 62,
             "title": "Award News",
-            "url": "/news/subject/1050029",
+            "url": "/news/subject/award",
             "description": "",
             "target": "",
             "active": true,
@@ -141,7 +171,7 @@
           {
             "id": 63,
             "title": "Bankruptcy News",
-            "url": "/news/subject/1000001",
+            "url": "/news/subject/bankruptcy",
             "description": "",
             "target": "",
             "active": true,
@@ -151,7 +181,7 @@
           {
             "id": 64,
             "title": "Bond Issue News",
-            "url": "/news/subject/1050030",
+            "url": "/news/subject/bond-issue",
             "description": "",
             "target": "",
             "active": true,
@@ -161,7 +191,7 @@
           {
             "id": 65,
             "title": "Bond/Stock Rating News",
-            "url": "/news/subject/1000002",
+            "url": "/news/subject/bond-stock-rating",
             "description": "",
             "target": "",
             "active": true,
@@ -171,17 +201,7 @@
           {
             "id": 66,
             "title": "Business Update News",
-            "url": "/news/subject/1778692",
-            "description": "",
-            "target": "",
-            "active": true,
-            "language": "",
-            "children": []
-          },
-          {
-            "id": 67,
-            "title": "Closed End Fund News",
-            "url": "/news/subject/1050031",
+            "url": "/news/subject/business-update",
             "description": "",
             "target": "",
             "active": true,
@@ -209,6 +229,16 @@
         "active": true,
         "language": "",
         "children": [
+          {
+            "id": 6404,
+            "title": "Overview",
+            "url": "/news/language",
+            "description": "",
+            "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
           {
             "id": 68,
             "title": "Español",
@@ -280,16 +310,6 @@
             "children": []
           },
           {
-            "id": 734,
-            "title": "Norsk",
-            "url": "/news/language/no",
-            "description": "",
-            "target": "",
-            "active": true,
-            "language": "",
-            "children": []
-          },
-          {
             "id": "19",
             "title": "View All",
             "url": "/news/language",
@@ -305,7 +325,7 @@
         "id": 3308,
         "title": "News with Multimedia",
         "url": "/news/multimedia/",
-        "description": "",
+        "description": "See the latest news releases featuring video, photos, infographics, and other multimedia.",
         "target": "",
         "active": true,
         "language": "",
@@ -316,17 +336,17 @@
   {
     "id": 13,
     "title": "Services",
-    "url": "/services",
+    "url": "#",
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "",
     "active": true,
     "language": "",
     "children": [
       {
-        "id": 210,
-        "title": "Services Home",
+        "id": 6120,
+        "title": "Overview",
         "url": "/services",
-        "description": "The industry’s only patented and global propriety news content distribution",
+        "description": "Discover our press release distribution services, regulatory products, measurement tools, and more.",
         "target": "",
         "active": true,
         "language": "",
@@ -342,11 +362,21 @@
         "language": "",
         "children": [
           {
-            "id": 185,
-            "title": "Press Release Distribution",
-            "url": "/services/public-relations/press-release-distribution",
+            "id": 6405,
+            "title": "Overview",
+            "url": "/services/public-relations-services",
             "description": "",
             "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
+          {
+            "id": 185,
+            "title": "Press Release Distribution",
+            "url": "https://services.businesswire.com/public-relations-services/press-release-distribution",
+            "description": "",
+            "target": "_blank",
             "active": true,
             "language": "",
             "children": []
@@ -406,6 +436,16 @@
             "title": "Online Newsrooms",
             "url": "https://services.businesswire.com/investor-relations-services/ir-websites",
             "description": "",
+            "target": "_blank",
+            "active": true,
+            "language": "",
+            "children": []
+          },
+          {
+            "id": "21",
+            "title": "View All",
+            "url": "/services/public-relations-services",
+            "description": "",
             "target": "",
             "active": true,
             "language": "",
@@ -422,6 +462,16 @@
         "active": true,
         "language": "",
         "children": [
+          {
+            "id": 6406,
+            "title": "Overview",
+            "url": "/services/investor-relations-services",
+            "description": "",
+            "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
           {
             "id": 186,
             "title": "Press Release Disclosure",
@@ -493,16 +543,6 @@
             "children": []
           },
           {
-            "id": 200,
-            "title": "European Disclosure",
-            "url": "https://services.businesswire.com/investor-relations-services/european-disclosure",
-            "description": "",
-            "target": "_blank",
-            "active": true,
-            "language": "",
-            "children": []
-          },
-          {
             "id": "22",
             "title": "View All",
             "url": "/services/investor-relations-services",
@@ -523,6 +563,16 @@
         "active": true,
         "language": "",
         "children": [
+          {
+            "id": 6407,
+            "title": "Overview",
+            "url": "/services/distribution-analytics",
+            "description": "",
+            "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
           {
             "id": 201,
             "title": "Distribution Lists",
@@ -595,6 +645,16 @@
         "language": "",
         "children": [
           {
+            "id": 6408,
+            "title": "Overview",
+            "url": "/services/media-journalist-tools",
+            "description": "",
+            "target": "",
+            "active": true,
+            "language": "",
+            "children": []
+          },
+          {
             "id": 207,
             "title": "PressPass",
             "url": "https://services.businesswire.com/media-journalist-tools/presspass?hsLang=en",
@@ -629,7 +689,7 @@
             "title": "Targeted News",
             "url": "https://services.businesswire.com/media-journalist-tools/targeted-news-for-your-users",
             "description": "",
-            "target": "",
+            "target": "_blank",
             "active": true,
             "language": "",
             "children": []
@@ -641,18 +701,18 @@
   {
     "id": 14,
     "title": "Blog",
-    "url": "https://blog.businesswire.com/",
+    "url": "#",
     "description": "The industry’s only patented and global propriety news content distribution",
-    "target": "_blank",
+    "target": "",
     "active": true,
     "language": "",
     "children": [
       {
-        "id": 211,
-        "title": "Blog Home",
+        "id": 6122,
+        "title": "Blog",
         "url": "https://blog.businesswire.com/",
-        "description": "The industry’s only patented and global propriety news content distribution",
-        "target": "",
+        "description": "Expert insights, industry trends, and news to keep you informed.",
+        "target": "_blank",
         "active": true,
         "language": "",
         "children": []
@@ -661,18 +721,8 @@
         "id": 25,
         "title": "Public Relations",
         "url": "https://blog.businesswire.com/tag/public-relations",
-        "description": "The industry’s only patented and global propriety news content distribution",
-        "target": "",
-        "active": true,
-        "language": "",
-        "children": []
-      },
-      {
-        "id": 26,
-        "title": "Media Relations",
-        "url": "https://blog.businesswire.com/tag/media-relations",
-        "description": "The industry’s only patented and global propriety news content distribution",
-        "target": "",
+        "description": "Articles on PR tips, best practices, and developments.",
+        "target": "_blank",
         "active": true,
         "language": "",
         "children": []
@@ -681,8 +731,18 @@
         "id": 3298,
         "title": "Investor Relations",
         "url": "https://blog.businesswire.com/tag/investor-relations",
-        "description": "",
-        "target": "",
+        "description": "Articles on IR tips, best practices, and developments.",
+        "target": "_blank",
+        "active": true,
+        "language": "",
+        "children": []
+      },
+      {
+        "id": 26,
+        "title": "Media Relations",
+        "url": "https://blog.businesswire.com/tag/media-relations",
+        "description": "Articles on media relations tips, best practices, and developments.",
+        "target": "_blank",
         "active": true,
         "language": "",
         "children": []
@@ -692,18 +752,18 @@
   {
     "id": 15,
     "title": "Resources",
-    "url": "https://services.businesswire.com/resources-education",
-    "description": "The industry’s only patented and global propriety news content distribution",
-    "target": "_blank",
+    "url": "#",
+    "description": "",
+    "target": "",
     "active": true,
     "language": "",
     "children": [
       {
-        "id": 212,
-        "title": "Resources & Education Home",
+        "id": 6121,
+        "title": "Resources",
         "url": "https://services.businesswire.com/resources-education",
-        "description": "The industry’s only patented and global propriety news content distribution",
-        "target": "",
+        "description": "Everything you need to stay current in the news communications world.",
+        "target": "_blank",
         "active": true,
         "language": "",
         "children": []
@@ -712,7 +772,7 @@
         "id": 27,
         "title": "Distribution Lists",
         "url": "https://services.businesswire.com/distribution-analytics/distribution-lists",
-        "description": "The industry’s only patented and global propriety news content distribution",
+        "description": "Discover our geographic, demographic, industry- and subject-specific distribution lists to fit your strategy.",
         "target": "_blank",
         "active": true,
         "language": "",
@@ -722,7 +782,7 @@
         "id": 29,
         "title": "Sample Press Releases",
         "url": "https://services.businesswire.com/resources-education/sample-press-release",
-        "description": "The industry’s only patented and global propriety news content distribution",
+        "description": "View examples of Business Wire press releases.",
         "target": "_blank",
         "active": true,
         "language": "",
@@ -732,7 +792,7 @@
         "id": 28,
         "title": "Customer Testimonials",
         "url": "https://services.businesswire.com/customer-testimonials",
-        "description": "The industry’s only patented and global propriety news content distribution",
+        "description": "See why clients choose Business Wire.",
         "target": "_blank",
         "active": true,
         "language": "",
@@ -742,7 +802,7 @@
         "id": 30,
         "title": "Find Your News Online",
         "url": "https://services.businesswire.com/find-your-news-online",
-        "description": "The industry’s only patented and global propriety news content distribution",
+        "description": "Learn more about the sites where Business Wire news appears.",
         "target": "_blank",
         "active": true,
         "language": "",
@@ -753,7 +813,7 @@
   {
     "id": 16,
     "title": "Contact",
-    "url": "/contact-us",
+    "url": "#",
     "description": "The industry’s only patented and global propriety news content distribution",
     "target": "",
     "active": true,
@@ -763,7 +823,7 @@
         "id": 213,
         "title": "General Inquiries",
         "url": "/contact-us",
-        "description": "The industry’s only patented and global propriety news content distribution",
+        "description": "",
         "target": "",
         "active": true,
         "language": "",

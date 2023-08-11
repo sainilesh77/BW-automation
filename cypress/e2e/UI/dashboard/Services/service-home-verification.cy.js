@@ -72,7 +72,7 @@ describe('Services Contents verification', () => {
 
         it('Slider Content', () => {
 
-            cy.get('div.slider-content').scrollIntoView().should('be.visible')
+            cy.get('div.slider-content').should('be.visible')
 
         })
 
@@ -80,7 +80,7 @@ describe('Services Contents verification', () => {
 
         it('Slider Content have title', () => {
 
-            cy.get('div.slider-content').find('.slider-title').scrollIntoView().should('be.visible')
+            cy.get('div.slider-content').find('.slider-title').should('be.visible')
 
         })
 
@@ -88,7 +88,7 @@ describe('Services Contents verification', () => {
 
         it('Slider Content have description', () => {
 
-            cy.get('div.slider-content').find('.slider-desc').scrollIntoView().should('be.visible')
+            cy.get('div.slider-content').find('.slider-desc').should('be.visible')
 
         })
 

@@ -15,7 +15,7 @@ describe('Services Public Relations verification', () => {
         cy.get('.ant-menu-submenu-title > .ant-menu-title-content > span').should('be.visible').contains('Services').should('be.visible').trigger('mouseover',{ force : true })
         cy.get('a > h3').contains('Public Relations').click({force : true})
         cy.get('.slider-div').should('be.visible')
-        cy.get('#onetrust-accept-btn-handler').click()
+        //cy.get('#onetrust-accept-btn-handler').click()
     })
 
     context('Hero Slider', () => {
@@ -36,15 +36,15 @@ describe('Services Public Relations verification', () => {
         })
 
         it('Slider Content', () => {
-            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').scrollIntoView().should('be.visible')
+            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').should('be.visible')
         })
 
         it('Slider Content have title', () => {
-            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').find('.ant-col.ant-col-24.slider-title.css-dev-only-do-not-override-zyge7o').scrollIntoView().should('be.visible')
+            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').find('.ant-col.ant-col-24.slider-title.css-dev-only-do-not-override-zyge7o').should('be.visible')
         })
 
         it('Slider Content have description', () => {
-            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').find('.ant-col.ant-col-24.slider-desc.css-dev-only-do-not-override-zyge7o').scrollIntoView().should('be.visible')
+            cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').find('.ant-col.ant-col-24.slider-desc.css-dev-only-do-not-override-zyge7o').should('be.visible')
         })
     })
 
@@ -73,7 +73,7 @@ describe('Services Public Relations verification', () => {
             cy.get('.recommendation').find('.recommendation_news').each((news) => {
                 cy.wrap(news).find('.cover-image-div').should('be.visible')
                 cy.wrap(news).get('a').should('have.attr', 'href')
-                .should('contains','/news') 
+                .should('contains','/services') 
             })
         })
     })
@@ -159,7 +159,7 @@ describe('Services Public Relations verification', () => {
                 cy.get('.breadcrumbSec').scrollIntoView().find('.ant-breadcrumb-separator').should('be.visible')
             })
     
-            it('Service Page Title', () => {
+            it('Page Title', () => {
                 cy.title().should('eq', 'Public-Relation | Business Wire')
             })
     

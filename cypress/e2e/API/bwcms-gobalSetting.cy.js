@@ -1,8 +1,8 @@
 import APIConstants from "../../support/constants/APIConstants";
 import APIHelpers from "../../support/Helpers/APIHelper"
 
-describe('BW-CMS GET /Page Global Settings verification', () => {
-it('Get global setting with valid parameters', () => {
+describe('BW-CMS GET / Page Global Settings Endpoint Verification', () => {
+it('Get Global setting with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -14,7 +14,7 @@ it('Get global setting with valid parameters', () => {
     });
 });
 
-it('Get global setting invalid parameters', () => {
+it('Get Global setting invalid parameters', () => {
     cy.request({
         method:  'GET',
         failOnStatusCode: false,

@@ -7,12 +7,14 @@ module.exports = defineConfig({
   viewportHeight: 720,
   chromeWebSecurity: false,
   experimentalModifyObstructiveThirdPartyCode: true,
+  
   env: {
     allureReuseAfterSpec: true,
     allure:true,
     allureResultsPath:'allure-results',
     allureLogCypress:true,
     browserResolution:'1920_768'
+    
   },
   e2e: {
     setupNodeEvents(on, config) {

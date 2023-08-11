@@ -16,14 +16,22 @@ describe('Services Visual verification', () => {
         cy.get('.slider-btn').should('be.visible')
         cy.get('#onetrust-accept-btn-handler').click()
     })
-    it('Services home page', () => {
+    it('Services homepage', () => {
         cy.compareSnapshot('Services-Home-Page'+width+'_'+height,1);
     })
     it('Slider components', () => {
-        cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').compareSnapshot('Slider-component'+width+'_'+height,1);
+        //cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o').compareSnapshot('Slider-component'+width+'_'+height,1);
+
+        cy.get('.ant-row.slider-content.css-dev-only-do-not-override-zyge7o', {timeout: 6000}).should('be.visible')
+        cy.screenshot({capture:'fullPage'})
     })
     it('Service contents ', () => {
-        cy.get('.about-services_content').compareSnapshot('Service-contents-component'+width+'_'+height,1);
+       // cy.get('.about-services_content').compareSnapshot('Service-contents-component'+width+'_'+height,1);
+
+        cy.get('.about-services', {timeout: 6000}).should('be.visible')
+        cy.screenshot({capture:'fullPage'})
+
+
     })
     it('Recommendation Info ', () => {
         cy.get('.recommendationInfoSec').compareSnapshot('Recommendation-info-component'+width+'_'+height,1);

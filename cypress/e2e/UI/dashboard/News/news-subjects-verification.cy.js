@@ -14,7 +14,7 @@ describe('News Subject verification', () => {
         .visit('/')
         cy.get('.ant-menu-title-content > span > a').should('be.visible').contains('News').should('be.visible')
         cy.get('a > h3').contains('News by Subject').click({force:true})
-        cy.get('#onetrust-accept-btn-handler').click()
+      //  cy.get('#onetrust-accept-btn-handler').click()
     })
     context('News Heading', () => {
         it('News Category Section', () => {
@@ -40,21 +40,21 @@ describe('News Subject verification', () => {
 
     })
 
-    context('News Letter', () => {
+    context('Newsletter', () => {
 
-        it('News Letter verification', () => {
+        it('Newsletter verification', () => {
             cy.get('.signupNewsLetter_content').scrollIntoView().should('be.visible')
         })
     
-        it('News Letter Base Box verification', () => {
+        it('Newsletter Base Box verification', () => {
             cy.get('.signupNewsLetter_content').scrollIntoView().find('.signupnewsletterBaseText').should('be.visible')
         })
     
-        it('News Letter Base Box Text Heading verification', () => {
+        it('Newsletter Base Box Text Heading verification', () => {
             cy.get('.signupNewsLetter_content').scrollIntoView().find('.signupnewsletterBaseText_heading').should('be.visible')
         })
     
-        it('News Letter Base Box Text Sub Heading verification', () => {
+        it('Newsletter Base Box Text Sub Heading verification', () => {
             cy.get('.signupNewsLetter_content').find('.signupnewsletterBaseText_subheading').contains('Become a registered PressPass member and receive up-to-date news on the topics you cover.').should('be.visible')
         })
     

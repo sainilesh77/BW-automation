@@ -25,7 +25,7 @@ describe('Headers verifications', () => {
             });
     });
 
-    it('Verify all links from Home Page', function () {
+    it('Verify all links from Homepage', function () {
         cy.verifyAllLinks('businesswire.com');
     });
     

@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+/// <reference types="@shelex/cypress-allure-plugin"/>
+
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
@@ -27,10 +29,17 @@ function getConfigurationByFile(file) {
     return fs.readJson(pathToConfigFile);
 }
 module.exports = (on, config) => {
-    const file = config.env.fileConfig || 'uat';
+    const file = config.env.fileConfig || 'alpha';
     if(config.hasOwnProperty('env') &&  config.env.hasOwnProperty('browserResolution')){
         config.browserResolution = config.env.browserResolution || '1920_768';
     }
     return getConfigurationByFile(file);
+
+    const allureWriter = require("@shelex/cypress-allure-plugin/writer");
+
+module.exports = (on, config) => {
+allureWriter(on, config);
+return config;
+}
 };
 

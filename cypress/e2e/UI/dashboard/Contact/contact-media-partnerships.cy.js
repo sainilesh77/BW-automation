@@ -15,7 +15,7 @@ describe('Contact Media and Partnership verification', () => {
         cy.get('.ant-menu-title-content > span > a').should('be.visible').contains('Contact').should('be.visible').click()
         cy.get('a > h3').contains('Media & Partnerships').click({force : true})
         cy.get('.header_slider').should('be.visible')
-        cy.get('#onetrust-accept-btn-handler').click()
+       // cy.get('#onetrust-accept-btn-handler').click()
     })
 
 

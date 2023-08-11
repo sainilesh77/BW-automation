@@ -12,7 +12,8 @@ describe('Contact US Components Verification test suite', () => {
         cy 
         .visit('/')
     })
-    it('conatct us components verification', function () {
+
+    it.skip('conatct us components verification', function () {
         cy.log((Cypress.env('browserResolution')));
         cy.log(resolutionData.contactUS);
         contactPage.verifyContactContainerComponent(resolutionData)

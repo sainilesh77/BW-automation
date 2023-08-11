@@ -9,7 +9,7 @@
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "test": "npx cypress run --spec cypress/e2e/ --env allure=true",
     "cy:uat": "npx cypress run --env fileConfig=uat,browserResolution=1920_768 --browser chrome --spec cypress/e2e/ --env allure=true",
-    "cy:alpha": "npx cypress run --env fileConfig=alpha,browserResolution=1920_768 --browser chrome --spec cypress/e2e/ --env allure=true",
+    "cy:alpha": "npx cypress run --env fileConfig=alpha,browserResolution=1920_768 --browser chrome --spec cypress/e2e/ --env allure=true",   
     "cy:uat-chrome": "npx cypress run --env fileConfig=uat --browser chrome --spec cypress/e2e/Visual/ --env allure=true",
     "cy:uat-firefox": "npx cypress run --env fileConfig=uat --browser firefox --spec cypress/e2e/ --env allure=true",
     "cy:uat-edge": "npx cypress run --env fileConfig=uat --browser edge --spec cypress/e2e/ --env allure=true",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/sainilesh77/BW-automation#readme",
   "devDependencies": {
-    "@shelex/cypress-allure-plugin": "^2.35.2",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
     "cypress": "^12.17.3",
     "cypress-image-diff-js": "^1.23.0",
     "cypress-mochawesome-reporter": "^3.3.0"
@@ -41,5 +41,12 @@
     "cypress-xpath": "^2.0.1",
     "fs-extra": "^11.1.1",
     "mocha-allure-reporter": "^1.4.0"
+
+
+
   }
+
+ 
 }
+
+

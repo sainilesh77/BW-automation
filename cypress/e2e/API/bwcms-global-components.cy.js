@@ -1,8 +1,8 @@
 import APIConstants from "../../support/constants/APIConstants";
 import APIHelpers from "../../support/Helpers/APIHelper"
 
-describe('BW-CMS GET Global components verification', () => {
-it('Get contact us details with valid parameters', () => {
+describe('BW-CMS GET Global Components Endpoint Verification', () => {
+it('Get Contact Us Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -14,7 +14,7 @@ it('Get contact us details with valid parameters', () => {
     });
 });
 
-it('Get Contact us with invalid parameters', () => {
+it('Get Contact Us Banner with invalid parameters', () => {
     cy.request({
         method:  'GET',
         failOnStatusCode: false,
@@ -26,7 +26,7 @@ it('Get Contact us with invalid parameters', () => {
         expect(response.status).to.eq(APIConstants.RESPONSE.NOT_FOUND);
     });
 });
-it('Get demo details with valid parameters', () => {
+it('Get Demo Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -38,7 +38,7 @@ it('Get demo details with valid parameters', () => {
     });
 });
 
-it('Get NewsLetter details with valid parameters', () => {
+it('Get NewsLetter Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -50,7 +50,7 @@ it('Get NewsLetter details with valid parameters', () => {
     });
 });
 
-it('Get right details with valid parameters', () => {
+it('Get Right Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -62,7 +62,7 @@ it('Get right details with valid parameters', () => {
     });
 });
 
-it('Get sign_up details with valid parameters', () => {
+it('Get Sign_up Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -74,7 +74,7 @@ it('Get sign_up details with valid parameters', () => {
     });
 });
 
-it('Get who_we_are details with valid parameters', () => {
+it('Get Who_we_are Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -86,7 +86,7 @@ it('Get who_we_are details with valid parameters', () => {
     });
 });
 
-it('Get video components details with valid parameters', () => {
+it('Get Video components details with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -101,7 +101,7 @@ it('Get video components details with valid parameters', () => {
 
 /* Code added by AMAR*/
 
-it('Get Media banner with valid parameters', () => {
+it('Get Media Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -113,7 +113,7 @@ it('Get Media banner with valid parameters', () => {
     });
 });
 
-it('Get Twitter banner with valid parameters', () => {
+it('Get Twitter Social Media Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -126,7 +126,7 @@ it('Get Twitter banner with valid parameters', () => {
 });
 
 
-it('Get Testimonials with valid parameters', () => {
+it('Get Testimonials Banner with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -138,8 +138,19 @@ it('Get Testimonials with valid parameters', () => {
         });
 });
 
+it('Get Popular News text with valid parameters', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/globalcomponent/"+APIConstants.GLOBAL_COMPONENTS.POPULAR,
+    }).then((response) => { 
+        expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+        });
 
 
+    })
 
 
 

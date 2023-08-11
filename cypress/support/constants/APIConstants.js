@@ -15,6 +15,9 @@ class APIConstants {
         /* Code added by AMAR*/
         ALL_NEWS:"news",
         NEWS_CATEGORY:"news-by-category",
+        NEWS_BY_SUBJECT:"news-by-subject",
+        NEWS_BY_LANGUAGE:"news-by-language",
+        NEWS_WITH_MULTIMEDIA:"news-with-multimedia",
         NEWS_DETAILS:"news-details",
         PUBLIC_RELATION:"public-relations",
         INVESTOR_RELATION:"investor-relations",
@@ -43,7 +46,9 @@ class APIConstants {
         /* Code added by AMAR*/
         MEDIA_BANNER:"media-banner",
         TWITTER:"twitter",
-        TESTIMONIALS:"testimonials"
+        TESTIMONIALS:"testimonials",
+        POPULAR:"popular_news"
+      
 
     }
 

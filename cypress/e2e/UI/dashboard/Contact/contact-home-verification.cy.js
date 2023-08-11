@@ -12,9 +12,15 @@ describe('Contact Contents verification', () => {
         height=browserResolution[1];   
         cy 
         .visit('/')
-        cy.get('.ant-menu-title-content > span > a').should('be.visible').contains('News').should('be.visible').click()
-        cy.get('.loader').should('not.exist')
-        cy.get('ul[id*="1-16-popup"] > div > div:nth-child(1) > a').should('be.visible').click();
+        // cy.get('.ant-menu-title-content > span > a').should('be.visible').contains('Contact').should('be.visible').click()
+        // cy.get('ul[id*="1-16-popup"] > div > div:nth-child(1) > a').should('be.visible').click();
+   
+        cy.get('.ant-menu-title-content > span > a').should('be.visible').contains('Contact').should('be.visible').click()
+        cy.get('a > h3').contains('General Inquiries').click({force : true})
+        cy.get('.header_slider').should('be.visible')
+       // cy.get('#onetrust-accept-btn-handler').click()
+
+
     })
 
     context('Header Slider', () => {

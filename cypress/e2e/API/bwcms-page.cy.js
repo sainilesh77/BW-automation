@@ -1,9 +1,9 @@
 import APIConstants from "../../support/constants/APIConstants";
 import APIHelpers from "../../support/Helpers/APIHelper"
 
-describe('BW-CMS GET /Page endpoint verification', () => {
+describe('BW-CMS GET / Pages Endpoint Verification', () => {
 
-    it('Get Home Page with valid parameters', () => {
+    it('Get Homepage with valid parameters', () => {
         cy.request({
             method:  'GET',
             headers: {
@@ -27,7 +27,7 @@ describe('BW-CMS GET /Page endpoint verification', () => {
             expect(response.status).to.eq(APIConstants.RESPONSE.NOT_FOUND);
         });
     });
-it('Get Service landing Page with valid parameters', () => {
+it('Get Service Landing Page with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -56,7 +56,19 @@ it('Get All News Page with valid parameters', () => {
     });
 });
 
-it('Get News Category Page with valid parameters', () => {
+// it('Get News Category Page with valid parameters', () => {
+//     cy.request({
+//         method:  'GET',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.NEWS_CATEGORY,
+//     }).then((response) => { 
+//         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+//     });
+// });
+
+it('Get News By Industry Page with valid parameters', () => {
     cy.request({
         method:  'GET',
         headers: {
@@ -68,6 +80,42 @@ it('Get News Category Page with valid parameters', () => {
     });
 });
 
+it('Get News By Subject Page with valid parameters', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.NEWS_BY_SUBJECT,
+    }).then((response) => { 
+        expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+    });
+});
+
+it('Get News By Language Page with valid parameters', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.NEWS_BY_LANGUAGE,
+    }).then((response) => { 
+        expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+    });
+});
+
+
+it('Get News With Multimedia Page with valid parameters', () => {
+    cy.request({
+        method:  'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE. NEWS_WITH_MULTIMEDIA,
+    }).then((response) => { 
+        expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
+    });
+});
 
 it('Get News Details Page with valid parameters', () => {
     cy.request({
@@ -172,7 +220,7 @@ it('Get Media & Partnership contact Page with valid parameters', () => {
         headers: {
             'Content-Type': 'application/json'
         },
-        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page?name="+APIConstants.PAGE.MEDIA_PARTNERSHIP_CONTACTS,
+        url:  Cypress.env('apiBaseUrl')+"wp-json/bwcms/page/"+APIConstants.PAGE.MEDIA_PARTNERSHIP_CONTACTS,
     }).then((response) => { 
         expect(response.status).to.eq(APIConstants.RESPONSE.SUCCESS);
     });

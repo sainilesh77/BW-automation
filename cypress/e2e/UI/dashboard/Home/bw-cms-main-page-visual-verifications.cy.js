@@ -60,7 +60,7 @@ describe('Home Page Visual Verification', () => {
         cy.get(visualData.footerNavList).compareSnapshot('BW-footer-nav'+width+'_'+height,5)
     });
 
-    it('contact us section', function () {
+    it('Contact us section', function () {
         dashboardPage.getPageMenu()
         cy.wait(2000)
         cy.get(visualData.contactBanner).compareSnapshot('BW-contact-banner'+width+'_'+height,5)

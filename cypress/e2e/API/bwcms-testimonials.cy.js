@@ -1,7 +1,7 @@
 import APIConstants from "../../support/constants/APIConstants";
 import APIHelpers from "../../support/Helpers/APIHelper"
 
-describe('BW-CMS GET /Testimonials verification', () => {
+describe('BW-CMS GET / Testimonials verification', () => {
 it('Get testimonials with valid parameters', () => {
     cy.request({
         method:  'GET',

@@ -2,7 +2,7 @@ import APIConstants from "../../support/constants/APIConstants";
 import APIHelpers from "../../support/Helpers/APIHelper"
 const allure = Cypress.Allure.reporter.getInterface();
 
-describe('BW-CMS GET /Menu endpoint verification', () => {
+describe('BW-CMS GET / Menu Endpoint Verification', () => {
 allure.feature('BW-CMS GET /Menu endpoint verification test suite');
 it('Get Main Header with valid data', () => {
     allure.epic('Get Main Header with valid data');
