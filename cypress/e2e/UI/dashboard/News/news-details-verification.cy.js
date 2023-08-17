@@ -297,18 +297,7 @@ describe('News Details Page Contents Verification', () => {
 
     })
 
-
-
-    
-
-
-
-       
-  
-   
- 
-
-    context('Contact Footer', () => {
+      context('Contact Footer', () => {
 
  
 

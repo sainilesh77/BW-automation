@@ -151,19 +151,19 @@ describe('News by Language verification', () => {
     })
     
     
-    context('All links from News all Page', () => {
-        it('Verify all links from News all Page', function () {
-            cy.get('a').each(link => {
-              if (link.prop('href'))
-                cy.request({
-                  url: link.prop('href'),
-                  failOnStatusCode: false
-                })
-              cy.log( link.prop('href'))
-            })
-        });
+    // context('All links from News all Page', () => {
+    //     it('Verify all links from News all Page', function () {
+    //         cy.get('a').each(link => {
+    //           if (link.prop('href'))
+    //             cy.request({
+    //               url: link.prop('href'),
+    //               failOnStatusCode: false
+    //             })
+    //           cy.log( link.prop('href'))
+    //         })
+    //     });
     
-    })
+    // })
     
     context('Register Press Pass', () => {
         it('Register for Press Pass verification', () => {

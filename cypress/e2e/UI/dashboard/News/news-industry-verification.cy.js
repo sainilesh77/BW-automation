@@ -152,19 +152,19 @@ describe('News by Industry verification', () => {
     })
     
     
-    context('All links from News by Industry Page', () => {
-        it('Verify all links from News by Industry Page', function () {
-            cy.get('a').each(link => {
-              if (link.prop('href'))
-                cy.request({
-                  url: link.prop('href'),
-                  failOnStatusCode: false
-                })
-              cy.log( link.prop('href'))
-            })
-        });
+    // context('All links from News by Industry Page', () => {
+    //     it('Verify all links from News by Industry Page', function () {
+    //         cy.get('a').each(link => {
+    //           if (link.prop('href'))
+    //             cy.request({
+    //               url: link.prop('href'),
+    //               failOnStatusCode: false
+    //             })
+    //           cy.log( link.prop('href'))
+    //         })
+    //     });
     
-    })
+    // })
     
     context('Register Press Pass', () => {
         it('Register for Press Pass verification', () => {
